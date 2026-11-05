@@ -1,0 +1,321 @@
+/* Estilos base y utilitarios para Portal Migrante (Mobile-First / Accesible) */
+:root {
+  --primary: #0284c7;
+  --primary-dark: #0369a1;
+  --secondary: #059669;
+  --bg-main: #f8fafc;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #475569;
+  --border-color: #e2e8f0;
+  --font-base: 16px;
+}
+
+/* Modo alto contraste */
+body.high-contrast {
+  --primary: #004b75;
+  --primary-dark: #002d47;
+  --secondary: #005a3e;
+  --bg-main: #000000;
+  --card-bg: #121212;
+  --text-main: #ffffff;
+  --text-muted: #e2e8f0;
+  --border-color: #ffffff;
+}
+
+/* Modo fuente grande */
+body.font-large {
+  --font-base: 19px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  font-size: var(--font-base);
+  line-height: 1.6;
+  padding-bottom: 80px; /* Espacio para barra inferior en móviles */
+}
+
+/* Contenedor principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Cabecera */
+header {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: white;
+  padding: 20px 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+header h1 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+header p {
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-top: 4px;
+}
+
+/* Barra de estado online / offline */
+.status-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 12px;
+  font-size: 0.85rem;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-weight: 500;
+}
+
+.status-bar.offline {
+  background-color: #fef2f2;
+  color: #991b1b;
+}
+
+/* Barra de accesibilidad */
+.accessibility-bar {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn-acc {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  color: white;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.btn-acc:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* Tarjetas */
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 18px;
+  margin-bottom: 16px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.card-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 8px;
+}
+
+.card-subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 12px;
+}
+
+/* Botones principales */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.15s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary);
+  color: white;
+}
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+  background-color: var(--secondary);
+  color: white;
+}
+
+.btn-danger {
+  background-color: #dc2626;
+  color: white;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid var(--primary);
+  color: var(--primary);
+}
+
+/* Cuadros informativos */
+.alert-box {
+  background-color: #fffbeb;
+  border-left: 4px solid #f59e0b;
+  padding: 12px 14px;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-size: 0.9rem;
+  color: #92400e;
+}
+
+.alert-danger {
+  background-color: #fef2f2;
+  border-left-color: #ef4444;
+  color: #991b1b;
+}
+
+.alert-success {
+  background-color: #f0fdf4;
+  border-left-color: #10b981;
+  color: #065f46;
+}
+
+/* Barra de progreso de checklist */
+.progress-container {
+  background-color: #e2e8f0;
+  border-radius: 999px;
+  height: 12px;
+  overflow: hidden;
+  margin: 12px 0;
+}
+
+.progress-bar {
+  background-color: var(--secondary);
+  height: 100%;
+  width: 0%;
+  transition: width 0.3s ease;
+}
+
+/* Elementos de checklist */
+.checklist-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: var(--card-bg);
+}
+
+.checklist-item.completed {
+  background-color: #f0fdf4;
+  border-color: #86efac;
+}
+
+.checklist-item input[type="checkbox"] {
+  width: 22px;
+  height: 22px;
+  margin-top: 2px;
+  cursor: pointer;
+  accent-color: var(--secondary);
+}
+
+/* Barra de navegación inferior móvil */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--card-bg);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-around;
+  padding: 8px 4px;
+  z-index: 100;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.05);
+}
+
+.nav-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 4px;
+  flex: 1;
+  text-align: center;
+}
+
+.nav-item.active {
+  color: var(--primary);
+  font-weight: 700;
+}
+
+.nav-icon {
+  width: 22px;
+  height: 22px;
+  margin-bottom: 2px;
+}
+
+/* Filtros de directorio */
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--border-color);
+  background-color: var(--card-bg);
+  color: var(--text-muted);
+  font-size: 0.85rem;
+  font-weight: 500;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  background-color: var(--primary);
+  color: white;
+  border-color: var(--primary);
+}
+
+/* Ocultar vistas */
+.view {
+  display: none;
+}
+.view.active {
+  display: block;
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "ebais_venecia",
+    "nombre": "EBAIS de Venecia (CCSS)",
+    "canton": "San Carlos",
+    "distrito": "Venecia",
+    "categoria": "Salud",
+    "direccion": "Frente a la Plaza de Deportes de Venecia, costado norte.",
+    "telefono": "2472-2114",
+    "horario": "Lunes a Jueves: 7:00 a. m. a 4:00 p. m. | Viernes: 7:00 a. m. a 3:00 p. m.",
+    "tramites": "Adscripción médica, medicina general, odontología, farmacia y vacunación.",
+    "coordenadas": {
+      "lat": 10.3703,
+      "lng": -84.2831
+    }
+  },
+  {
+    "id": "ebais_aguas_zarcas",
+    "nombre": "Área de Salud y EBAIS de Aguas Zarcas",
+    "canton": "San Carlos",
+    "distrito": "Aguas Zarcas",
+    "categoria": "Salud",
+    "direccion": "300 metros norte del Templo Católico de Aguas Zarcas.",
+    "telefono": "2474-0012",
+    "horario": "Lunes a Viernes: 7:00 a. m. a 4:00 p. m. (Emergencias 24 horas)",
+    "tramites": "Atención ambulatoria, laboratorio clínico, urgencias y validación de derechos.",
+    "coordenadas": {
+      "lat": 10.3752,
+      "lng": -84.3418
+    }
+  },
+  {
+    "id": "hospital_san_carlos",
+    "nombre": "Hospital San Carlos (CCSS)",
+    "canton": "San Carlos",
+    "distrito": "Ciudad Quesada",
+    "categoria": "Salud",
+    "direccion": "Barrio San Martín, Ciudad Quesada, San Carlos.",
+    "telefono": "2401-1200",
+    "horario": "Servicio de Emergencias: 24 horas continuas, 365 días al año.",
+    "tramites": "Emergencias críticas, partos, hospitalización y atención médica especializada.",
+    "coordenadas": {
+      "lat": 10.3241,
+      "lng": -84.4312
+    }
+  },
+  {
+    "id": "migracion_ciudad_quesada",
+    "nombre": "Delegación Regional de Migración (DGME)",
+    "canton": "San Carlos",
+    "distrito": "Ciudad Quesada",
+    "categoria": "Migración",
+    "direccion": "Ciudad Quesada, 100 m este de los Tribunales de Justicia.",
+    "telefono": "2460-6425",
+    "horario": "Lunes a Viernes: 7:30 a. m. a 3:30 p. m.",
+    "tramites": "Recepción de residencias por vínculo, renovación DIMEX, permisos de trabajo y consultas.",
+    "coordenadas": {
+      "lat": 10.3238,
+      "lng": -84.4289
+    }
+  },
+  {
+    "id": "correos_ciudad_quesada",
+    "nombre": "Ventanilla Electrónica VES — Correos de Costa Rica",
+    "canton": "San Carlos",
+    "distrito": "Ciudad Quesada",
+    "categoria": "Trámites",
+    "direccion": "Costado sur de la Catedral de Ciudad Quesada.",
+    "telefono": "2460-0145",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m. | Sábados: 8:00 a. m. a 12:00 m.",
+    "tramites": "Citas para toma de foto, huellas dactilares y entrega de documento DIMEX.",
+    "coordenadas": {
+      "lat": 10.3248,
+      "lng": -84.4305
+    }
+  },
+  {
+    "id": "acnur_upala",
+    "nombre": "Oficina de Terreno de ACNUR (ONU Refugiados)",
+    "canton": "Upala",
+    "distrito": "Upala Centro",
+    "categoria": "Organización",
+    "direccion": "Costado este del Parque Central de Upala.",
+    "telefono": "2470-0190",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 4:00 p. m.",
+    "tramites": "Orientación jurídica gratuita a solicitantes de refugio, convenios de seguro CCSS y asistencia.",
+    "coordenadas": {
+      "lat": 10.8987,
+      "lng": -85.0182
+    }
+  },
+  {
+    "id": "oim_los_chiles",
+    "nombre": "Centro de Apoyo Humanitario OIM (Naciones Unidas)",
+    "canton": "Los Chiles",
+    "distrito": "Los Chiles Centro",
+    "categoria": "Organización",
+    "direccion": "Calle Central, Los Chiles, 200 m oeste del Templo Católico.",
+    "telefono": "2471-1250",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 4:30 p. m.",
+    "tramites": "Orientación sobre regularización migratoria, albergue temporal y derechos laborales.",
+    "coordenadas": {
+      "lat": 11.0331,
+      "lng": -84.7185
+    }
+  },
+  {
+    "id": "adi_venecia",
+    "nombre": "Asociación de Desarrollo Integral de Venecia (ADI)",
+    "canton": "San Carlos",
+    "distrito": "Venecia",
+    "categoria": "Comunitaria",
+    "direccion": "Venecia de San Carlos, salón comunal y oficinas administrativas.",
+    "telefono": "2472-2050",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m.",
+    "tramites": "Canalización de inquietudes comunales, enlace con líderes vecinales y apoyo social.",
+    "coordenadas": {
+      "lat": 10.3712,
+      "lng": -84.2825
+    }
+  }
+]

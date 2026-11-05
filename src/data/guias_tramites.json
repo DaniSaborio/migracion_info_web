@@ -1,0 +1,204 @@
+[
+  {
+    "id": "refugio",
+    "titulo": "Guía 1: Solicitud de Refugio",
+    "descripcion": "Para personas que salieron de su país porque su vida, seguridad o libertad corren peligro por persecución política, violencia o motivos de protección internacional.",
+    "aranceles": {
+      "usd": 0,
+      "crc": 0,
+      "detalle": "Trámite 100% gratuito. La cita, la recepción de documentos y el carné provisional de solicitante NO tienen ningún costo."
+    },
+    "lugar": "Unidad de Refugio de Migración (La Uruca, San José). No se puede solicitar en Ciudad Quesada.",
+    "cuenta_bancaria": "No aplica ningún pago.",
+    "advertencia_fraude": "Las citas de refugio son estrictamente gratuitas y personales. No pague a intermediarios ni tramitadores que cobren por apartar citas o vender formularios.",
+    "requisitos": [
+      {
+        "id": "ref_doc_id",
+        "texto": "Documento de identidad o pasaporte del país de origen (si lo posee, original y copia)."
+      },
+      {
+        "id": "ref_declaracion",
+        "texto": "Declaración jurada detallando los hechos que motivaron su salida del país y el temor fundado de regresar."
+      },
+      {
+        "id": "ref_fotos",
+        "texto": "Dos fotografías tamaño pasaporte recientes de frente con fondo blanco."
+      },
+      {
+        "id": "ref_huellas",
+        "texto": "Comprobante de toma de huellas dactilares ante el Archivo Policial (Ministerio de Seguridad Pública)."
+      },
+      {
+        "id": "ref_formulario",
+        "texto": "Formulario oficial de solicitud de refugio completado debidamente."
+      }
+    ],
+    "pasos": [
+      "Paso 1: Solicite su cita a través del sitio web oficial de la DGME o llamando a la línea 1311.",
+      "Paso 2: Reúna los documentos requeridos antes de la fecha asignada.",
+      "Paso 3: Presente su solicitud presencialmente en la Unidad de Refugio (La Uruca).",
+      "Paso 4: Reciba el carné de solicitante de refugio (válido en todo el país).",
+      "Paso 5: Cumpla los 3 meses posteriores a la solicitud para poder optar por el carné con permiso laboral."
+    ]
+  },
+  {
+    "id": "categoria_especial_2026",
+    "titulo": "Guía 2: Categoría Especial Temporal de Protección (2026)",
+    "descripcion": "Para personas originarias de Nicaragua, Venezuela, Cuba o Colombia con solicitud de refugio pendiente o denegada, o que cumplan arraigo comprobable en Costa Rica.",
+    "aranceles": {
+      "usd": 95,
+      "crc": 50000,
+      "detalle": "US$90 por arancel oficial de categoría especial + US$5 de canon social. Más especies fiscales según tipo de cambio BCR."
+    },
+    "lugar": "Sede Regional de Migración en Ciudad Quesada o vía ventanilla digital oficial de la DGME.",
+    "cuenta_bancaria": "Cuenta 242480-0 del Banco de Costa Rica (BCR) a nombre de la persona solicitante.",
+    "advertencia_fraude": "Verifique siempre que el depósito bancario se realice en la cuenta oficial de la DGME. Conserve de inmediato el comprobante bancario físico.",
+    "requisitos": [
+      {
+        "id": "cat_pasaporte",
+        "texto": "Copia de todas las páginas utilizadas del pasaporte o cédula de identidad vigente."
+      },
+      {
+        "id": "cat_record",
+        "texto": "Récord policial o certificado de antecedentes penales apostillado o legalizado del país de origen."
+      },
+      {
+        "id": "cat_arraigo",
+        "texto": "Pruebas de permanencia en Costa Rica (constancias de trabajo, contratos de alquiler, recibos o constancias escolares)."
+      },
+      {
+        "id": "cat_pago_bcr",
+        "texto": "Comprobante de depósito bancario en la cuenta 242480-0 del BCR a nombre del solicitante."
+      },
+      {
+        "id": "cat_huellas",
+        "texto": "Comprobante de toma de huellas emitido por el Ministerio de Seguridad Pública."
+      }
+    ],
+    "pasos": [
+      "Paso 1: Confirme que cumple con las fechas de ingreso estipuladas por la resolución vigente.",
+      "Paso 2: Realice el pago correspondiente en el Banco de Costa Rica indicando su nombre completo.",
+      "Paso 3: Agende su cita presencial en la sede de Ciudad Quesada o cargue el expediente digital.",
+      "Paso 4: Presente el expediente completo y guarde la hoja de recibido con el número de trámite.",
+      "Paso 5: Tras la resolución favorable, proceda a la afiliación en la CCSS y cita de DIMEX."
+    ]
+  },
+  {
+    "id": "residencia_vinculo",
+    "titulo": "Guía 3: Residencia por Vínculo de Primer Grado con Costarricense",
+    "descripcion": "Para padres o madres extranjeras de personas costarricenses (hijos nacidos en el país), o personas cónyuges legalmente casadas con costarricenses.",
+    "aranceles": {
+      "usd": 250,
+      "crc": 130000,
+      "detalle": "US$200 por solicitud de residencia + US$50 por especies fiscales y timbres oficiales."
+    },
+    "lugar": "Delegación Regional de Migración en Ciudad Quesada o Plataforma Digital de la DGME.",
+    "cuenta_bancaria": "Cuenta 242480-0 del BCR a nombre de la persona que tramita la residencia.",
+    "advertencia_fraude": "Tener hijos costarricenses otorga el derecho de solicitar residencia; no pague honorarios excesivos por asesorías innecesarias.",
+    "requisitos": [
+      {
+        "id": "vin_cert_nacimiento",
+        "texto": "Certificado de nacimiento de la hija o hijo costarricense emitido por el Tribunal Supremo de Elecciones (TSE)."
+      },
+      {
+        "id": "vin_pasaporte",
+        "texto": "Fotocopia legible y completa de todas las páginas del pasaporte vigente o documento de identidad."
+      },
+      {
+        "id": "vin_antecedentes",
+        "texto": "Certificación de antecedentes penales del país de origen legalizada o apostillada."
+      },
+      {
+        "id": "vin_deposito",
+        "texto": "Comprobante de pago bancario de los derechos consulares y aranceles oficiales en el BCR."
+      },
+      {
+        "id": "vin_huellas",
+        "texto": "Comprobante de enrolamiento y toma de huellas en la delegación policial autorizada."
+      }
+    ],
+    "pasos": [
+      "Paso 1: Solicite el certificado de nacimiento digital o impreso de su hijo/a en el Registro Civil (TSE).",
+      "Paso 2: Realice el depósito bancario de los aranceles en el Banco de Costa Rica.",
+      "Paso 3: Presente los requisitos en la Sede Regional de Migración de Ciudad Quesada.",
+      "Paso 4: Dé seguimiento al expediente mediante el portal web de consulta de expedientes de la DGME.",
+      "Paso 5: Al ser notificada la resolución aprobatoria, proceda al aseguramiento en la CCSS."
+    ]
+  },
+  {
+    "id": "dimex_renovacion",
+    "titulo": "Guía 4: Emisión y Renovación de Documento DIMEX",
+    "descripcion": "Para personas que ya cuentan con resolución de permanencia o refugio aprobada y requieren documentar su carné DIMEX por primera vez o por vencimiento.",
+    "aranceles": {
+      "usd": 128,
+      "crc": 67000,
+      "detalle": "US$123 por emisión del documento de identidad migratoria + US$5 de comisión bancaria/postal de entrega."
+    },
+    "lugar": "Sucursales de Correos de Costa Rica (Ventanilla Electrónica VES) o Banco de Costa Rica autorizados.",
+    "cuenta_bancaria": "Pago directo en ventanilla de Correos de Costa Rica o Banco de Costa Rica al momento de la cita.",
+    "advertencia_fraude": "Las multas por DIMEX vencido son de US$3 por mes de retraso. Renueve con al menos 1 mes de anticipación para evitar recargos acumulados.",
+    "requisitos": [
+      {
+        "id": "dim_cita",
+        "texto": "Cita previa gestionada en Correos de Costa Rica (llamando al 1311 o en el portal oficial)."
+      },
+      {
+        "id": "dim_anterior",
+        "texto": "Documento DIMEX original vencido o por vencer (o denuncia del OIJ si fue extraviado/robado)."
+      },
+      {
+        "id": "dim_ccss",
+        "texto": "Comprobante de seguro social de la CCSS al día (orden patronal, carné de asegurado voluntario o seguro ACNUR)."
+      },
+      {
+        "id": "dim_pago",
+        "texto": "Comprobante del pago total de aranceles y posibles multas por meses vencidos."
+      }
+    ],
+    "pasos": [
+      "Paso 1: Verifique su estatus en el sistema de la CCSS y asegúrese de que no reporta morosidad.",
+      "Paso 2: Llame al 1311 o ingrese a correos.go.cr para solicitar su cita de renovación DIMEX.",
+      "Paso 3: Acuda puntualmente a la oficina de Correos de Costa Rica (ej. Ciudad Quesada o Aguas Zarcas).",
+      "Paso 4: Realice la toma de fotografía y verificación dactilar en la ventanilla VES.",
+      "Paso 5: Retire el documento DIMEX en la sucursal asignada o recíbalo por mensajería segura."
+    ]
+  },
+  {
+    "id": "seguro_ccss",
+    "titulo": "Guía 5: Seguro de Salud de la CCSS y Acceso a Servicios",
+    "descripcion": "Mecanismos para afiliarse al seguro de salud de la Caja Costarricense de Seguro Social (aseguramiento por cuenta propia, voluntario o convenios humanitarios).",
+    "aranceles": {
+      "usd": 0,
+      "crc": 0,
+      "detalle": "La adscripción y trámite es gratuito; la mensualidad se calcula según la base mínima contributiva de ingresos reportados."
+    },
+    "lugar": "EBAIS de su comunidad de residencia (Venecia, Aguas Zarcas) y Sucursal de la CCSS en Ciudad Quesada.",
+    "cuenta_bancaria": "Pago mensual directo en plataformas autorizadas de la CCSS o cajas del EBAIS.",
+    "advertencia_fraude": "La atención médica de urgencias en los hospitales de la CCSS está garantizada para mujeres embarazadas, partos, niñas y niños, sin importar su condición migratoria.",
+    "requisitos": [
+      {
+        "id": "ccss_id",
+        "texto": "Documento DIMEX, carné de solicitante de refugio o pasaporte con sello de permanencia."
+      },
+      {
+        "id": "ccss_recibo",
+        "texto": "Recibo de agua, luz o constancia de residencia que certifique su domicilio en la comunidad."
+      },
+      {
+        "id": "ccss_ingresos",
+        "texto": "Constancia de ingresos, salario o declaración de ingresos para seguro por cuenta propia."
+      },
+      {
+        "id": "ccss_solicitud",
+        "texto": "Formulario de solicitud de adscripción provisto en la ventanilla del EBAIS."
+      }
+    ],
+    "pasos": [
+      "Paso 1: Identifique el EBAIS que le corresponde por su lugar exacto de vivienda (ej. EBAIS Venecia).",
+      "Paso 2: Presente en el EBAIS su documento de identidad y comprobante de dirección para adscribirse.",
+      "Paso 3: Si trabaja de forma independiente, solicite el estudio socioeconómico para la cuota voluntaria.",
+      "Paso 4: Si cuenta con apoyo de ACNUR, consulte por el convenio de póliza subsidiada de salud.",
+      "Paso 5: Realice el pago puntual cada mes para mantener su comprobante de seguro al día."
+    ]
+  }
+]
