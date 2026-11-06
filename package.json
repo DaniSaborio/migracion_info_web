@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
-    "export": "next build"
+    "start": "node preview.js",
+    "preview": "node preview.js",
+    "lint": "next lint"
   },
   "dependencies": {
     "lucide-react": "^0.460.0",
