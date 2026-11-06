@@ -5,12 +5,12 @@
 
 ---
 
-## 🌟 Descripción General
+## Descripción General
 El **Portal Informativo para Personas Migrantes** es una plataforma moderna desarrollada con **Next.js 14**, **Tailwind CSS** y capacidades de **Progressive Web App (PWA)**, diseñada bajo una arquitectura **Local-First / Zero-Knowledge** para brindar orientación rápida, segura, confidencial y gratuita sobre trámites migratorios, requisitos y sedes de apoyo en la Región Huetar Norte (San Carlos, Venecia, Aguas Zarcas, Upala y Los Chiles).
 
 ---
 
-## ☁️ Cumplimiento de Estándares para Cloudflare Pages (100% Gratuito)
+## Cumplimiento de Estándares para Cloudflare Pages (100% Gratuito)
 El proyecto cumple estrictamente los estándares técnicos para el **Plan Gratuito Permanente (Free Tier)** de **Cloudflare Pages**:
 
 | Criterio Técnico | Configuración en el Proyecto | Cumplimiento Cloudflare Free Tier |
@@ -34,14 +34,14 @@ El proyecto cumple estrictamente los estándares técnicos para el **Plan Gratui
 
 ---
 
-## 🔒 Arquitectura Local-First y Privacidad por Diseño
+## Arquitectura Local-First y Privacidad por Diseño
 * **Cero Base de Datos Remota:** El portal no transmite ni almacena en servidores ningún dato de las personas usuarias (nombres, identificaciones, teléfonos ni estatus migratorio).
 * **Persistencia en el Dispositivo:** La lista de chequeo de documentos y las preferencias de interfaz (alto contraste y tamaño de fuente) se gestionan 100% de manera local en el navegador mediante `window.localStorage`.
 * **Disponibilidad Offline:** Gracias al Service Worker (`public/sw.js`), la aplicación se instala en teléfonos Android e iOS como PWA y puede consultarse en asentamientos rurales o fincas sin conexión celular ni paquete de datos.
 
 ---
 
-## 📱 Módulos y Funcionalidades
+## Módulos y Funcionalidades
 1. **Orientador Inicial (Inicio):** Diagnóstico rápido (*¿En cuál situación estás?*) con 5 tarjetas interactivas que canalizan al trámite exacto.
 2. **Catálogo de Guías:** 5 Guías oficiales con aranceles oficiales desglosados en USD y Colones (₡), cuenta bancaria oficial del Banco de Costa Rica (BCR: 242480-0) y advertencias contra fraudes:
    * Guía 1: Solicitud de Refugio (Gratuito).
@@ -56,7 +56,7 @@ El proyecto cumple estrictamente los estándares técnicos para el **Plan Gratui
 
 ---
 
-## 🛠️ Ejecución Local
+## Ejecución Local
 
 ```bash
 # Instalar dependencias
@@ -71,7 +71,7 @@ npm run build
 
 ---
 
-## 👨‍💻 Autor y Créditos
+## Autor y Créditos
 * **Estudiante:** Daniel Gerardo Saborío Rodríguez — Cédula: 208560812
 * **Tutor Académico:** Juan Luis Gutiérrez Chaves
 * **Comunidad Beneficiaria:** Venecia de San Carlos, Alajuela, Costa Rica

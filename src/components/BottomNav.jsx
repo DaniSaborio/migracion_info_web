@@ -2,17 +2,17 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Compass, BookOpen, CheckSquare, Building2, PhoneCall } from 'lucide-react';
+import { FaCompass, FaBookOpen, FaListCheck, FaBuilding, FaPhoneVolume } from 'react-icons/fa6';
 
 export default function BottomNav() {
   const pathname = usePathname();
 
   const navItems = [
-    { label: 'Orientador', href: '/', icon: Compass, match: (p) => p === '/' },
-    { label: 'Guías', href: '/guias/', icon: BookOpen, match: (p) => p.startsWith('/guias') },
-    { label: 'Requisitos', href: '/requisitos/', icon: CheckSquare, match: (p) => p.startsWith('/requisitos') },
-    { label: 'Directorio', href: '/directorio/', icon: Building2, match: (p) => p.startsWith('/directorio') },
-    { label: 'Emergencias', href: '/emergencias/', icon: PhoneCall, match: (p) => p.startsWith('/emergencias') },
+    { label: 'Orientador', href: '/', icon: FaCompass, match: (p) => p === '/' },
+    { label: 'Guías', href: '/guias/', icon: FaBookOpen, match: (p) => p.startsWith('/guias') },
+    { label: 'Requisitos', href: '/requisitos/', icon: FaListCheck, match: (p) => p.startsWith('/requisitos') },
+    { label: 'Directorio', href: '/directorio/', icon: FaBuilding, match: (p) => p.startsWith('/directorio') },
+    { label: 'Emergencias', href: '/emergencias/', icon: FaPhoneVolume, match: (p) => p.startsWith('/emergencias') },
   ];
 
   return (

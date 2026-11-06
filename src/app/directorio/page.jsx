@@ -1,7 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import { Building2, MapPin, Phone, Clock, FileText, ExternalLink } from 'lucide-react';
+import {
+  FaBuilding,
+  FaLocationDot,
+  FaPhone,
+  FaClock,
+  FaFileLines,
+  FaArrowUpRightFromSquare
+} from 'react-icons/fa6';
 import directorioData from '@/data/directorio.json';
 
 export default function DirectorioPage() {
@@ -19,7 +26,7 @@ export default function DirectorioPage() {
       {/* Encabezado */}
       <div>
         <div className="flex items-center gap-2 text-brand-600 dark:text-sky-400 font-bold text-xs uppercase tracking-wider mb-1">
-          <Building2 className="w-4 h-4" />
+          <FaBuilding className="w-4 h-4" />
           <span>Sedes Confirmadas y Puntos de Apoyo</span>
         </div>
         <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
@@ -70,15 +77,15 @@ export default function DirectorioPage() {
 
             <div className="space-y-1.5 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
               <p className="flex items-start gap-2">
-                <MapPin className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
+                <FaLocationDot className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
                 <span><strong>Dirección:</strong> {sede.direccion}</span>
               </p>
               <p className="flex items-start gap-2">
-                <Clock className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
+                <FaClock className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
                 <span><strong>Horario:</strong> {sede.horario}</span>
               </p>
               <p className="flex items-start gap-2">
-                <FileText className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
+                <FaFileLines className="w-4 h-4 text-slate-400 shrink-0 mt-0.5" />
                 <span><strong>Trámites:</strong> {sede.tramites}</span>
               </p>
             </div>
@@ -89,7 +96,7 @@ export default function DirectorioPage() {
                 href={`tel:${sede.telefono.replace(/-/g, '')}`}
                 className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold shadow-xs transition-colors"
               >
-                <Phone className="w-3.5 h-3.5" />
+                <FaPhone className="w-3.5 h-3.5" />
                 <span>Llamar ({sede.telefono})</span>
               </a>
               <a
@@ -98,7 +105,7 @@ export default function DirectorioPage() {
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-1.5 px-3 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-200 text-xs font-semibold transition-colors"
               >
-                <ExternalLink className="w-3.5 h-3.5" />
+                <FaArrowUpRightFromSquare className="w-3.5 h-3.5" />
                 <span>Ver en Mapa</span>
               </a>
             </div>

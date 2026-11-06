@@ -1,18 +1,16 @@
 import Link from 'next/link';
 import {
-  Compass,
-  AlertTriangle,
-  ArrowRight,
-  ShieldCheck,
-  HeartHandshake,
-  FileCheck2,
-  Users2,
-  Landmark,
-  WifiOff,
-  Scale,
-  Sparkles,
-  BookOpen
-} from 'lucide-react';
+  FaTriangleExclamation,
+  FaArrowRight,
+  FaShieldHalved,
+  FaHandHoldingHeart,
+  FaFileCircleCheck,
+  FaPeopleRoof,
+  FaLandmark,
+  FaScaleBalanced,
+  FaBookOpen
+} from 'react-icons/fa6';
+import { MdWifiOff } from 'react-icons/md';
 import OrientadorFormulario from '@/components/OrientadorFormulario';
 import guiasData from '@/data/guias_tramites.json';
 
@@ -24,7 +22,7 @@ export default function HomePage() {
       guiaTitulo: "Guía 1: Solicitud de Refugio",
       badge: "Trámite Gratuito",
       badgeColor: "bg-emerald-100 text-emerald-800 border-emerald-200",
-      icon: ShieldCheck,
+      icon: FaShieldHalved,
       iconColor: "text-emerald-600 bg-emerald-50",
       tiempo: "Cita inicial gratis",
       resumen: "Para personas cuya vida o libertad peligra en su país de origen. Incluye carné provisional y posterior permiso de trabajo."
@@ -35,7 +33,7 @@ export default function HomePage() {
       guiaTitulo: "Guía 2: Categoría Especial Temporal (2026)",
       badge: "Resolución DGME 2026",
       badgeColor: "bg-sky-100 text-sky-800 border-sky-200",
-      icon: FileCheck2,
+      icon: FaFileCircleCheck,
       iconColor: "text-sky-600 bg-sky-50",
       tiempo: "Arancel oficial en BCR",
       resumen: "Vía expedita de regularización con derecho a laborar legalmente si demuestra arraigo en Costa Rica."
@@ -46,7 +44,7 @@ export default function HomePage() {
       guiaTitulo: "Guía 3: Residencia por Vínculo de 1.er Grado",
       badge: "Derecho por Vínculo",
       badgeColor: "bg-purple-100 text-purple-800 border-purple-200",
-      icon: Users2,
+      icon: FaPeopleRoof,
       iconColor: "text-purple-600 bg-purple-50",
       tiempo: "Cédula de residencia",
       resumen: "Opción permanente para padres de menores costarricenses nacidos en el país o cónyuges legalmente casados."
@@ -57,7 +55,7 @@ export default function HomePage() {
       guiaTitulo: "Guía 4: Emisión y Renovación de DIMEX",
       badge: "Documentación Oficial",
       badgeColor: "bg-amber-100 text-amber-800 border-amber-200",
-      icon: Landmark,
+      icon: FaLandmark,
       iconColor: "text-amber-600 bg-amber-50",
       tiempo: "Cita en Correos / BCR",
       resumen: "Pasos para sacar el carné plástico oficial en ventanillas VES de Correos de Costa Rica o sucursales bancarias autorizadas."
@@ -68,7 +66,7 @@ export default function HomePage() {
       guiaTitulo: "Guía 5: Seguro de Salud de la CCSS y EBAIS",
       badge: "Salud y Seguridad Social",
       badgeColor: "bg-rose-100 text-rose-800 border-rose-200",
-      icon: HeartHandshake,
+      icon: FaHandHoldingHeart,
       iconColor: "text-rose-600 bg-rose-50",
       tiempo: "Adscripción en su comunidad",
       resumen: "Cómo afiliarse al seguro por cuenta propia o convenios humanitarios. Atención de emergencias y partos garantizada."
@@ -101,7 +99,7 @@ export default function HomePage() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
           <div className="p-3.5 bg-white dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/80 space-y-1.5">
             <div className="flex items-center gap-2 text-brand-700 dark:text-sky-300 font-bold text-xs">
-              <Scale className="w-4 h-4 text-brand-600" />
+              <FaScaleBalanced className="w-4 h-4 text-brand-600" />
               <span>Marco Legal 2026</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -111,7 +109,7 @@ export default function HomePage() {
 
           <div className="p-3.5 bg-white dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/80 space-y-1.5">
             <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400 font-bold text-xs">
-              <ShieldCheck className="w-4 h-4 text-emerald-600" />
+              <FaShieldHalved className="w-4 h-4 text-emerald-600" />
               <span>Privacidad Total</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -121,7 +119,7 @@ export default function HomePage() {
 
           <div className="p-3.5 bg-white dark:bg-slate-800/80 rounded-xl border border-slate-200 dark:border-slate-700/80 space-y-1.5">
             <div className="flex items-center gap-2 text-sky-700 dark:text-sky-400 font-bold text-xs">
-              <WifiOff className="w-4 h-4 text-sky-600" />
+              <MdWifiOff className="w-4 h-4 text-sky-600" />
               <span>Funciona sin Internet</span>
             </div>
             <p className="text-xs text-slate-500 dark:text-slate-400">
@@ -133,7 +131,7 @@ export default function HomePage() {
 
       {/* AVISO DE SEGURIDAD CONTRA FRAUDES */}
       <div className="bg-amber-50 dark:bg-amber-950/40 border-l-4 border-amber-500 p-4 rounded-r-xl text-amber-900 dark:text-amber-200 text-xs sm:text-sm flex items-start gap-3 shadow-xs">
-        <AlertTriangle className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
+        <FaTriangleExclamation className="w-5 h-5 text-amber-600 shrink-0 mt-0.5" />
         <div>
           <p className="font-bold">Aviso de Prevención contra Estafas y Cobros Indebidos:</p>
           <p className="mt-0.5">
@@ -160,10 +158,10 @@ export default function HomePage() {
           </div>
           <Link
             href="/guias/"
-            className="text-xs font-bold text-brand-600 dark:text-sky-400 hover:underline hidden sm:inline-flex items-center gap-1"
+            className="text-xs font-bold text-brand-600 dark:text-sky-400 hover:underline hidden sm:inline-flex items-center gap-1.5"
           >
             <span>Ver catálogo</span>
-            <ArrowRight className="w-3.5 h-3.5" />
+            <FaArrowRight className="w-3.5 h-3.5" />
           </Link>
         </div>
 
@@ -194,7 +192,7 @@ export default function HomePage() {
                       {item.resumen}
                     </p>
                   </div>
-                  <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-brand-600 group-hover:translate-x-1 transition-all shrink-0 mt-2" />
+                  <FaArrowRight className="w-4 h-4 text-slate-300 group-hover:text-brand-600 group-hover:translate-x-1 transition-all shrink-0 mt-2" />
                 </div>
               </Link>
             );
@@ -216,7 +214,7 @@ export default function HomePage() {
               EBAIS, Hospitales y Delegaciones en San Carlos, Upala y Los Chiles
             </p>
           </div>
-          <ArrowRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all" />
+          <FaArrowRight className="w-4 h-4 text-slate-400 group-hover:text-brand-600 group-hover:translate-x-1 transition-all" />
         </Link>
 
         <Link
@@ -231,7 +229,7 @@ export default function HomePage() {
               9-1-1, 1311, ACNUR, INAMU y PANI con llamada en un toque
             </p>
           </div>
-          <ArrowRight className="w-4 h-4 text-rose-500 group-hover:translate-x-1 transition-all" />
+          <FaArrowRight className="w-4 h-4 text-rose-500 group-hover:translate-x-1 transition-all" />
         </Link>
       </section>
     </div>

@@ -40,10 +40,10 @@ export function generateCardsHTML(sedes) {
         
         <div style="display: flex; gap: 10px;">
           <a href="tel:${s.telefono.replace(/-/g, '')}" class="btn btn-primary" style="flex: 1; padding: 8px 12px; font-size: 0.85rem;">
-            📞 Llamar (${s.telefono})
+            Llamar (${s.telefono})
           </a>
           <a href="https://maps.google.com/?q=${s.coordenadas.lat},${s.coordenadas.lng}" target="_blank" rel="noopener" class="btn btn-outline" style="flex: 1; padding: 8px 12px; font-size: 0.85rem;">
-            📍 Ver Mapa
+            Ver Mapa
           </a>
         </div>
       </div>

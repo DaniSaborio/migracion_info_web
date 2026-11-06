@@ -4,15 +4,15 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Storage } from '@/lib/storage';
 import {
-  ArrowLeft,
-  CheckCircle,
-  Landmark,
-  MapPin,
-  RotateCcw,
-  Printer,
-  ShieldAlert,
-  ListOrdered
-} from 'lucide-react';
+  FaArrowLeft,
+  FaCircleCheck,
+  FaLandmark,
+  FaLocationDot,
+  FaRotateLeft,
+  FaPrint,
+  FaTriangleExclamation,
+  FaListOl
+} from 'react-icons/fa6';
 
 export default function GuiaDetailClient({ guia }) {
   const [marcados, setMarcados] = useState([]);
@@ -51,7 +51,7 @@ export default function GuiaDetailClient({ guia }) {
           href="/guias/"
           className="inline-flex items-center gap-1.5 text-xs sm:text-sm font-semibold text-slate-600 dark:text-slate-400 hover:text-brand-600 transition-colors"
         >
-          <ArrowLeft className="w-4 h-4" />
+          <FaArrowLeft className="w-4 h-4" />
           <span>Volver al Catálogo de Guías</span>
         </Link>
       </div>
@@ -77,7 +77,7 @@ export default function GuiaDetailClient({ guia }) {
       {/* Aranceles y cuenta bancaria */}
       <section className="bg-white dark:bg-slate-900 rounded-2xl p-5 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
         <h3 className="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
-          <Landmark className="w-5 h-5 text-brand-600" />
+          <FaLandmark className="w-5 h-5 text-brand-600" />
           <span>Aranceles Oficiales y Lugar de Gestión</span>
         </h3>
         
@@ -97,7 +97,7 @@ export default function GuiaDetailClient({ guia }) {
         {/* Advertencia de fraude */}
         <div className="bg-rose-50 dark:bg-rose-950/30 border-l-4 border-rose-500 p-3.5 rounded-r-xl text-xs sm:text-sm text-rose-950 dark:text-rose-200">
           <div className="flex items-start gap-2">
-            <ShieldAlert className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
+            <FaTriangleExclamation className="w-4 h-4 text-rose-600 shrink-0 mt-0.5" />
             <div>
               <p className="font-bold">Advertencia contra cobros indebidos:</p>
               <p className="mt-0.5">{guia.advertencia_fraude}</p>
@@ -106,7 +106,7 @@ export default function GuiaDetailClient({ guia }) {
         </div>
 
         <div className="flex items-center gap-2 text-xs sm:text-sm text-slate-600 dark:text-slate-300 pt-1">
-          <MapPin className="w-4 h-4 text-brand-600 shrink-0" />
+          <FaLocationDot className="w-4 h-4 text-brand-600 shrink-0" />
           <span><strong>Dónde se realiza:</strong> {guia.lugar}</span>
         </div>
       </section>
@@ -116,7 +116,7 @@ export default function GuiaDetailClient({ guia }) {
         <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
           <div>
             <h3 className="text-lg font-bold text-slate-900 dark:text-white flex items-center gap-2">
-              <CheckCircle className="w-5 h-5 text-emerald-600" />
+              <FaCircleCheck className="w-5 h-5 text-emerald-600" />
               <span>Lista de Chequeo de Documentos</span>
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
@@ -172,14 +172,14 @@ export default function GuiaDetailClient({ guia }) {
             onClick={handlePrint}
             className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-brand-600 hover:bg-brand-700 text-white text-xs font-semibold shadow-xs transition-colors"
           >
-            <Printer className="w-4 h-4" />
+            <FaPrint className="w-4 h-4" />
             <span>Imprimir / Guardar Resumen</span>
           </button>
           <button
             onClick={handleReset}
             className="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 text-slate-700 dark:text-slate-300 text-xs font-semibold transition-colors"
           >
-            <RotateCcw className="w-4 h-4" />
+            <FaRotateLeft className="w-4 h-4" />
             <span>Restablecer Lista</span>
           </button>
         </div>
@@ -188,7 +188,7 @@ export default function GuiaDetailClient({ guia }) {
       {/* Pasos a seguir */}
       <section className="bg-white dark:bg-slate-900 rounded-2xl p-5 sm:p-6 border border-slate-200 dark:border-slate-800 shadow-sm space-y-4">
         <h3 className="font-bold text-base text-slate-900 dark:text-white flex items-center gap-2">
-          <ListOrdered className="w-5 h-5 text-brand-600" />
+          <FaListOl className="w-5 h-5 text-brand-600" />
           <span>Pasos Oficiales del Proceso</span>
         </h3>
         <ol className="space-y-3 text-xs sm:text-sm text-slate-700 dark:text-slate-300">

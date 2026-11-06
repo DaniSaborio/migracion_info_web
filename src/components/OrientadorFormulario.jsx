@@ -3,16 +3,18 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import {
-  Compass,
-  ArrowRight,
-  RotateCcw,
-  ShieldCheck,
-  CheckCircle2,
-  DollarSign,
-  MapPin,
-  Sparkles,
-  HelpCircle
-} from 'lucide-react';
+  FaWandMagicSparkles,
+  FaRotateLeft,
+  FaArrowRight,
+  FaCircleCheck,
+  FaCoins,
+  FaLocationDot,
+  FaShieldHalved,
+  FaClipboardList,
+  FaPeopleRoof,
+  FaIdCard,
+  FaHospital
+} from 'react-icons/fa6';
 import guiasData from '@/data/guias_tramites.json';
 
 export default function OrientadorFormulario() {
@@ -27,31 +29,36 @@ export default function OrientadorFormulario() {
       id: 'peligro',
       titulo: 'Salí de mi país por peligro o persecución',
       descripcion: 'Mi vida o libertad corren riesgo y requiero protección internacional en Costa Rica.',
-      icono: '🛡️'
+      icon: FaShieldHalved,
+      iconColor: 'bg-amber-100 text-amber-700 dark:bg-amber-950/80 dark:text-amber-400'
     },
     {
       id: 'regularizacion',
       titulo: 'Quiero regularizarme para trabajar legalmente',
       descripcion: 'Tengo tiempo viviendo en Costa Rica y deseo obtener un permiso legal de permanencia y empleo.',
-      icono: '📋'
+      icon: FaClipboardList,
+      iconColor: 'bg-blue-100 text-blue-700 dark:bg-blue-950/80 dark:text-blue-400'
     },
     {
       id: 'familia',
       titulo: 'Tengo hijos o cónyuge costarricense',
       descripcion: 'Tengo hijas/hijos nacidos en Costa Rica o matrimonio civil registrado con persona costarricense.',
-      icono: '👨‍👩‍👧'
+      icon: FaPeopleRoof,
+      iconColor: 'bg-purple-100 text-purple-700 dark:bg-purple-950/80 dark:text-purple-400'
     },
     {
       id: 'dimex',
       titulo: 'Necesito sacar o renovar mi carné DIMEX',
       descripcion: 'Ya tengo mi trámite aprobado o mi cédula de residencia está próxima a vencer.',
-      icono: '💳'
+      icon: FaIdCard,
+      iconColor: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-950/80 dark:text-emerald-400'
     },
     {
       id: 'salud',
       titulo: 'Necesito atención médica o seguro de la CCSS',
       descripcion: 'Quiero inscribirme en el EBAIS, asegurar a mi familia o consultar sobre citas y recetas.',
-      icono: '🏥'
+      icon: FaHospital,
+      iconColor: 'bg-rose-100 text-rose-700 dark:bg-rose-950/80 dark:text-rose-400'
     }
   ];
 
@@ -131,7 +138,7 @@ export default function OrientadorFormulario() {
       <div className="flex items-center justify-between border-b border-slate-100 dark:border-slate-800 pb-3">
         <div className="flex items-center gap-2.5">
           <div className="p-2 bg-brand-50 dark:bg-sky-950 text-brand-600 dark:text-sky-400 rounded-lg">
-            <Sparkles className="w-5 h-5" />
+            <FaWandMagicSparkles className="w-5 h-5" />
           </div>
           <div>
             <h3 className="font-bold text-base sm:text-lg text-slate-900 dark:text-white flex items-center gap-2">
@@ -146,9 +153,9 @@ export default function OrientadorFormulario() {
         {paso > 1 && (
           <button
             onClick={handleReiniciar}
-            className="text-xs font-semibold text-slate-500 hover:text-brand-600 flex items-center gap-1 transition-colors"
+            className="text-xs font-semibold text-slate-500 hover:text-brand-600 flex items-center gap-1.5 transition-colors"
           >
-            <RotateCcw className="w-3.5 h-3.5" />
+            <FaRotateLeft className="w-3.5 h-3.5" />
             <span>Reiniciar</span>
           </button>
         )}
@@ -174,24 +181,29 @@ export default function OrientadorFormulario() {
           </div>
 
           <div className="grid gap-2.5">
-            {opcionesPaso1.map((opcion) => (
-              <button
-                key={opcion.id}
-                onClick={() => handleSeleccionarPaso1(opcion.id)}
-                className="w-full text-left p-3.5 sm:p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:bg-sky-50/50 dark:hover:bg-slate-800/50 transition-all flex items-start gap-3.5 group"
-              >
-                <span className="text-2xl shrink-0 mt-0.5">{opcion.icono}</span>
-                <div className="flex-1 min-w-0">
-                  <p className="font-bold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-sky-400 transition-colors">
-                    {opcion.titulo}
-                  </p>
-                  <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 leading-relaxed">
-                    {opcion.descripcion}
-                  </p>
-                </div>
-                <ArrowRight className="w-4 h-4 text-slate-300 group-hover:text-brand-600 group-hover:translate-x-1 transition-all shrink-0 mt-2" />
-              </button>
-            ))}
+            {opcionesPaso1.map((opcion) => {
+              const IconComp = opcion.icon;
+              return (
+                <button
+                  key={opcion.id}
+                  onClick={() => handleSeleccionarPaso1(opcion.id)}
+                  className="w-full text-left p-3.5 sm:p-4 rounded-xl border border-slate-200 dark:border-slate-800 hover:border-brand-500 dark:hover:border-brand-500 hover:bg-sky-50/50 dark:hover:bg-slate-800/50 transition-all flex items-start gap-3.5 group"
+                >
+                  <div className={`p-2.5 rounded-xl shrink-0 mt-0.5 ${opcion.iconColor}`}>
+                    <IconComp className="w-5 h-5" />
+                  </div>
+                  <div className="flex-1 min-w-0">
+                    <p className="font-bold text-sm sm:text-base text-slate-900 dark:text-white group-hover:text-brand-600 dark:group-hover:text-sky-400 transition-colors">
+                      {opcion.titulo}
+                    </p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5 leading-relaxed">
+                      {opcion.descripcion}
+                    </p>
+                  </div>
+                  <FaArrowRight className="w-4 h-4 text-slate-300 group-hover:text-brand-600 group-hover:translate-x-1 transition-all shrink-0 mt-2" />
+                </button>
+              );
+            })}
           </div>
         </div>
       )}
@@ -221,7 +233,7 @@ export default function OrientadorFormulario() {
                     {subOp.texto}
                   </span>
                 </div>
-                <ArrowRight className="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform shrink-0" />
+                <FaArrowRight className="w-4 h-4 text-slate-400 group-hover:translate-x-1 transition-transform shrink-0" />
               </button>
             ))}
           </div>
@@ -232,7 +244,7 @@ export default function OrientadorFormulario() {
       {paso === 3 && guiaRecomendada && (
         <div className="space-y-4 pt-1 animate-fadeIn">
           <div className="flex items-center gap-2 text-emerald-700 dark:text-emerald-400 font-bold text-xs uppercase tracking-wider">
-            <CheckCircle2 className="w-4 h-4 text-emerald-600" />
+            <FaCircleCheck className="w-4 h-4 text-emerald-600" />
             <span>Resultado de su Diagnóstico</span>
           </div>
 
@@ -241,8 +253,8 @@ export default function OrientadorFormulario() {
               <span className="text-xs font-bold text-brand-700 dark:text-sky-300 bg-brand-100 dark:bg-sky-950 px-2.5 py-0.5 rounded-full">
                 Guía Recomendada
               </span>
-              <span className="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
-                <DollarSign className="w-3.5 h-3.5" />
+              <span className="text-xs font-bold text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5">
+                <FaCoins className="w-3.5 h-3.5" />
                 {guiaRecomendada.aranceles.usd > 0
                   ? `Arancel: US$${guiaRecomendada.aranceles.usd} (~₡${guiaRecomendada.aranceles.crc.toLocaleString()})`
                   : 'Trámite 100% Gratuito'}
@@ -257,12 +269,12 @@ export default function OrientadorFormulario() {
             </p>
 
             <div className="grid sm:grid-cols-2 gap-2 text-xs text-slate-600 dark:text-slate-300 bg-white dark:bg-slate-800/80 p-3 rounded-xl border border-brand-100 dark:border-slate-700">
-              <p className="flex items-center gap-1.5">
-                <MapPin className="w-3.5 h-3.5 text-brand-600 shrink-0" />
+              <p className="flex items-center gap-2">
+                <FaLocationDot className="w-3.5 h-3.5 text-brand-600 shrink-0" />
                 <span><strong>Dónde acudir:</strong> {guiaRecomendada.lugar}</span>
               </p>
-              <p className="flex items-center gap-1.5">
-                <ShieldCheck className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
+              <p className="flex items-center gap-2">
+                <FaShieldHalved className="w-3.5 h-3.5 text-emerald-600 shrink-0" />
                 <span><strong>Requisitos:</strong> {guiaRecomendada.requisitos.length} documentos obligatorios</span>
               </p>
             </div>
@@ -273,7 +285,7 @@ export default function OrientadorFormulario() {
                 className="flex-1 inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-bold text-sm shadow-md transition-all hover:shadow-lg"
               >
                 <span>Abrir Guía y Comenzar mi Lista de Requisitos</span>
-                <ArrowRight className="w-4 h-4" />
+                <FaArrowRight className="w-4 h-4" />
               </Link>
               <button
                 onClick={handleReiniciar}

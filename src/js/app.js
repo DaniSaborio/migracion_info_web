@@ -110,7 +110,7 @@ window.appRouter = {
         const isDone = doneIds.includes(r.id);
         html += `
           <div style="font-size: 0.85rem; padding: 6px 0; border-bottom: 1px solid var(--border-color); display: flex; align-items: center; gap: 8px;">
-            <span>${isDone ? '✅' : '⚪'}</span>
+            <span>[${isDone ? 'LISTO' : 'PENDIENTE'}]</span>
             <span style="${isDone ? 'text-decoration: line-through; color: var(--text-muted);' : ''}">${r.texto}</span>
           </div>
         `;
@@ -182,10 +182,10 @@ function initNetworkMonitor() {
   function update() {
     if (navigator.onLine) {
       bar.className = 'status-bar';
-      bar.innerHTML = '<span>🟢 Conectado a Internet</span><span>Modo PWA Offline Activo</span>';
+      bar.innerHTML = '<span>Conectado a Internet</span><span>Modo PWA Offline Activo</span>';
     } else {
       bar.className = 'status-bar offline';
-      bar.innerHTML = '<span>🟠 Sin conexión de red</span><span>Modo Offline: Funcional</span>';
+      bar.innerHTML = '<span>Sin conexión de red</span><span>Modo Offline: Funcional</span>';
     }
   }
   window.addEventListener('online', update);

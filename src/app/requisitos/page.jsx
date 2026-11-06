@@ -3,7 +3,14 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Storage } from '@/lib/storage';
-import { CheckSquare, ArrowRight, Printer, RotateCcw, ShieldCheck } from 'lucide-react';
+import {
+  FaListCheck,
+  FaArrowRight,
+  FaPrint,
+  FaShieldHalved,
+  FaCircleCheck,
+  FaRegCircle
+} from 'react-icons/fa6';
 import guiasData from '@/data/guias_tramites.json';
 
 export default function RequisitosConsolidadosPage() {
@@ -35,7 +42,7 @@ export default function RequisitosConsolidadosPage() {
       {/* Encabezado */}
       <div>
         <div className="flex items-center gap-2 text-brand-600 dark:text-sky-400 font-bold text-xs uppercase tracking-wider mb-1">
-          <CheckSquare className="w-4 h-4" />
+          <FaListCheck className="w-4 h-4" />
           <span>Autoservicio y Control Personal</span>
         </div>
         <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
@@ -63,8 +70,8 @@ export default function RequisitosConsolidadosPage() {
           />
         </div>
 
-        <div className="flex items-center gap-1.5 text-xs text-emerald-100 pt-1">
-          <ShieldCheck className="w-4 h-4" />
+        <div className="flex items-center gap-2 text-xs text-emerald-100 pt-1">
+          <FaShieldHalved className="w-4 h-4" />
           <span>Almacenamiento exclusivo en este dispositivo (cero envío a servidores).</span>
         </div>
       </div>
@@ -73,9 +80,9 @@ export default function RequisitosConsolidadosPage() {
       <div className="flex justify-end no-print">
         <button
           onClick={handlePrint}
-          className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-semibold shadow-sm hover:opacity-90 transition-opacity"
+          className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-900 dark:bg-slate-100 text-white dark:text-slate-900 text-xs font-semibold shadow-sm hover:opacity-90 transition-opacity"
         >
-          <Printer className="w-4 h-4" />
+          <FaPrint className="w-4 h-4" />
           <span>Imprimir Resumen para mi Cita</span>
         </button>
       </div>
@@ -107,7 +114,13 @@ export default function RequisitosConsolidadosPage() {
                           : 'bg-slate-50 dark:bg-slate-800/40 border-slate-100 dark:border-slate-800 text-slate-500'
                       }`}
                     >
-                      <span>{isChecked ? '✅' : '⚪'}</span>
+                      <div className="shrink-0 mt-0.5">
+                        {isChecked ? (
+                          <FaCircleCheck className="w-4 h-4 text-emerald-600 dark:text-emerald-400" />
+                        ) : (
+                          <FaRegCircle className="w-4 h-4 text-slate-400" />
+                        )}
+                      </div>
                       <span className={isChecked ? 'line-through opacity-80' : ''}>{req.texto}</span>
                     </div>
                   );
@@ -117,10 +130,10 @@ export default function RequisitosConsolidadosPage() {
               <div className="pt-2 flex justify-end no-print">
                 <Link
                   href={`/guias/${guia.id}/`}
-                  className="inline-flex items-center gap-1 text-xs font-semibold text-brand-600 dark:text-sky-400 hover:underline"
+                  className="inline-flex items-center gap-1.5 text-xs font-semibold text-brand-600 dark:text-sky-400 hover:underline"
                 >
                   <span>Abrir o modificar lista</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <FaArrowRight className="w-3.5 h-3.5" />
                 </Link>
               </div>
             </div>

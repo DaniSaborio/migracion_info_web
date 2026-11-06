@@ -2,7 +2,14 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { BookOpen, Search, ArrowRight, DollarSign, MapPin, CheckCircle2 } from 'lucide-react';
+import {
+  FaBookOpen,
+  FaMagnifyingGlass,
+  FaArrowRight,
+  FaCoins,
+  FaLocationDot,
+  FaCircleCheck
+} from 'react-icons/fa6';
 import guiasData from '@/data/guias_tramites.json';
 
 export default function GuiasPage() {
@@ -20,7 +27,7 @@ export default function GuiasPage() {
       {/* Encabezado */}
       <div>
         <div className="flex items-center gap-2 text-brand-600 dark:text-sky-400 font-bold text-xs uppercase tracking-wider mb-1">
-          <BookOpen className="w-4 h-4" />
+          <FaBookOpen className="w-4 h-4" />
           <span>Información de Trámites Oficiales</span>
         </div>
         <h2 className="text-2xl font-bold text-slate-900 dark:text-white">
@@ -33,7 +40,7 @@ export default function GuiasPage() {
 
       {/* Buscador */}
       <div className="relative">
-        <Search className="absolute left-3.5 top-3 w-4 h-4 text-slate-400" />
+        <FaMagnifyingGlass className="absolute left-3.5 top-3.5 w-4 h-4 text-slate-400" />
         <input
           type="text"
           value={busqueda}
@@ -60,8 +67,8 @@ export default function GuiasPage() {
                   <span className="text-xs font-bold text-brand-700 dark:text-sky-300 bg-brand-50 dark:bg-sky-950/70 px-2.5 py-0.5 rounded-full border border-brand-200 dark:border-sky-900">
                     Trámite Oficial
                   </span>
-                  <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 flex items-center gap-1">
-                    <DollarSign className="w-3.5 h-3.5" />
+                  <span className="text-xs font-semibold text-emerald-700 dark:text-emerald-400 flex items-center gap-1.5">
+                    <FaCoins className="w-3.5 h-3.5" />
                     {guia.aranceles.usd > 0
                       ? `US$${guia.aranceles.usd} (~₡${guia.aranceles.crc.toLocaleString()})`
                       : 'Trámite Gratuito'}
@@ -77,12 +84,12 @@ export default function GuiasPage() {
 
               {/* Datos rápidos */}
               <div className="grid sm:grid-cols-2 gap-2 text-xs text-slate-500 dark:text-slate-400 bg-slate-50 dark:bg-slate-800/40 p-3 rounded-xl border border-slate-100 dark:border-slate-800">
-                <div className="flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-slate-400 shrink-0" />
+                <div className="flex items-center gap-2">
+                  <FaLocationDot className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                   <span className="truncate"><strong>Lugar:</strong> {guia.lugar}</span>
                 </div>
-                <div className="flex items-center gap-1.5">
-                  <CheckCircle2 className="w-4 h-4 text-slate-400 shrink-0" />
+                <div className="flex items-center gap-2">
+                  <FaCircleCheck className="w-3.5 h-3.5 text-slate-400 shrink-0" />
                   <span><strong>Requisitos:</strong> {guia.requisitos.length} documentos obligatorios</span>
                 </div>
               </div>
@@ -94,7 +101,7 @@ export default function GuiasPage() {
                   className="w-full inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-700 text-white font-semibold text-xs sm:text-sm transition-colors shadow-sm"
                 >
                   <span>Abrir Guía y Marcar Requisitos</span>
-                  <ArrowRight className="w-4 h-4" />
+                  <FaArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </div>

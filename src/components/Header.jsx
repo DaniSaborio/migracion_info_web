@@ -3,7 +3,8 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Storage } from '@/lib/storage';
-import { ShieldCheck, Wifi, WifiOff, Type, Eye } from 'lucide-react';
+import { FaShieldHalved, FaWifi, FaFont, FaEye } from 'react-icons/fa6';
+import { MdWifiOff } from 'react-icons/md';
 
 export default function Header() {
   const [isOnline, setIsOnline] = useState(true);
@@ -53,11 +54,11 @@ export default function Header() {
       {/* Barra de conectividad y privacidad */}
       <div className={`px-4 py-1 text-xs font-semibold flex items-center justify-between ${isOnline ? 'bg-sky-900/60 text-sky-100' : 'bg-amber-600 text-white animate-pulse'}`}>
         <div className="flex items-center gap-1.5">
-          {isOnline ? <Wifi className="w-3.5 h-3.5" /> : <WifiOff className="w-3.5 h-3.5" />}
+          {isOnline ? <FaWifi className="w-3.5 h-3.5" /> : <MdWifiOff className="w-3.5 h-3.5" />}
           <span>{isOnline ? 'Conectado a Internet' : 'Modo Offline: Funciona sin conexión'}</span>
         </div>
-        <div className="flex items-center gap-1 text-[11px] opacity-90">
-          <ShieldCheck className="w-3.5 h-3.5 text-emerald-300" />
+        <div className="flex items-center gap-1.5 text-[11px] opacity-90">
+          <FaShieldHalved className="w-3.5 h-3.5 text-emerald-300" />
           <span>Privacidad Local-First</span>
         </div>
       </div>
@@ -79,20 +80,20 @@ export default function Header() {
         <div className="flex items-center gap-2 self-start sm:self-auto">
           <button
             onClick={toggleFont}
-            className={`px-2.5 py-1 rounded-md text-xs font-medium border flex items-center gap-1 transition-colors ${fontLarge ? 'bg-white text-brand-800 border-white' : 'bg-brand-800/50 hover:bg-brand-800 text-white border-sky-400/40'}`}
+            className={`px-2.5 py-1 rounded-md text-xs font-medium border flex items-center gap-1.5 transition-colors ${fontLarge ? 'bg-white text-brand-800 border-white' : 'bg-brand-800/50 hover:bg-brand-800 text-white border-sky-400/40'}`}
             title="Ajustar tamaño de letra"
             aria-label="Ajustar tamaño de letra"
           >
-            <Type className="w-3.5 h-3.5" />
+            <FaFont className="w-3.5 h-3.5" />
             <span>{fontLarge ? 'Texto Normal' : 'Texto Grande'}</span>
           </button>
           <button
             onClick={toggleContrast}
-            className={`px-2.5 py-1 rounded-md text-xs font-medium border flex items-center gap-1 transition-colors ${highContrast ? 'bg-amber-400 text-slate-900 border-amber-300 font-bold' : 'bg-brand-800/50 hover:bg-brand-800 text-white border-sky-400/40'}`}
+            className={`px-2.5 py-1 rounded-md text-xs font-medium border flex items-center gap-1.5 transition-colors ${highContrast ? 'bg-amber-400 text-slate-900 border-amber-300 font-bold' : 'bg-brand-800/50 hover:bg-brand-800 text-white border-sky-400/40'}`}
             title="Alternar alto contraste"
             aria-label="Alternar alto contraste"
           >
-            <Eye className="w-3.5 h-3.5" />
+            <FaEye className="w-3.5 h-3.5" />
             <span>{highContrast ? 'Contraste Normal' : 'Alto Contraste'}</span>
           </button>
         </div>
