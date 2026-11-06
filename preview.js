@@ -53,8 +53,26 @@ const server = http.createServer((req, res) => {
   });
 });
 
-server.listen(PORT, () => {
-  console.log(`\n  ▲ Servidor Estático de Producción (Cloudflare Pages Preview)`);
-  console.log(`  - Local:   http://localhost:${PORT}`);
-  console.log(`  - Sirviendo carpeta: ${OUT_DIR}\n`);
+let currentPort = parseInt(process.env.PORT, 10) || 3000;
+
+function startServer(port) {
+  server.listen(port, () => {
+    console.log(`\n  ▲ Servidor Estático de Producción (Cloudflare Pages Preview)`);
+    console.log(`  - Local:   http://localhost:${port}`);
+    console.log(`  - Sirviendo carpeta: ${OUT_DIR}\n`);
+  });
+}
+
+server.on('error', (err) => {
+  if (err.code === 'EADDRINUSE') {
+    console.warn(`\n  [Aviso] El puerto ${currentPort} está ocupado por otro proceso.`);
+    currentPort += 1;
+    console.log(`  -> Intentando automáticamente en http://localhost:${currentPort}...\n`);
+    startServer(currentPort);
+  } else {
+    console.error('Error en el servidor:', err);
+    process.exit(1);
+  }
 });
+
+startServer(currentPort);
