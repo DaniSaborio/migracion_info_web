@@ -1,22 +1,23 @@
 {
   "name": "portal-informacion-migrante",
-  "version": "1.0.0",
-  "description": "Portal Web Progresivo (PWA) de información de trámites migratorios, directorios y listas de chequeo con arquitectura Local-First (sin base de datos en servidor) para la Región Huetar Norte.",
-  "type": "module",
+  "version": "2.0.0",
+  "private": true,
   "scripts": {
-    "dev": "python3 -m http.server 3000",
-    "serve": "python3 -m http.server 8080",
-    "test": "echo \"No tests specified\" && exit 0"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "export": "next build"
   },
-  "keywords": [
-    "pwa",
-    "migrantes",
-    "san-carlos",
-    "venecia",
-    "local-first",
-    "cloudflare-pages",
-    "offline-first"
-  ],
-  "author": "Daniel Gerardo Saborío Rodríguez <208560812>",
-  "license": "MIT"
+  "dependencies": {
+    "lucide-react": "^0.460.0",
+    "next": "^14.2.18",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.15"
+  }
 }
