@@ -1,0 +1,192 @@
+[
+  {
+    "id": "dgme_cq",
+    "nombre": "DGME Delegación Regional San Carlos",
+    "canton": "San Carlos",
+    "distrito": "Ciudad Quesada",
+    "categoria": "Migración",
+    "direccion": "400m Norte y 25m Este de la Catedral, frente a Plaza de Deportes Ciudad Quesada.",
+    "telefono": "2460-3044",
+    "telefono_secundario": "2460-6425",
+    "correo": "dgme.san-carlos@migracion.go.cr",
+    "requisito_previo": "Cita previa sacada por web (migracion.go.cr) o llamando al 1311",
+    "horario": "Lunes a Viernes: 7:30 a. m. a 3:30 p. m.",
+    "tramites": "Recepción de residencias por vínculo, cambio de categoría, permisos de trabajo y refugio.",
+    "coordenadas": {
+      "lat": 10.3251,
+      "lng": -84.4287
+    }
+  },
+  {
+    "id": "bcr_pital",
+    "nombre": "BCR Punto País Pital",
+    "canton": "San Carlos",
+    "distrito": "Pital",
+    "categoria": "Trámites",
+    "direccion": "Centro de Pital, costado norte del Parque de Pital de San Carlos.",
+    "telefono": "800-227-2482",
+    "correo": "puntopais@bancobcr.com",
+    "requisito_previo": "Cita previa al 800-BCR-CITA (800-227-2482) o al 1311",
+    "horario": "Lunes a Viernes: 8:30 a. m. a 4:00 p. m.",
+    "tramites": "Emisión y renovación de DIMEX, trámite y entrega de carné, depósitos cuenta 242480-0.",
+    "coordenadas": {
+      "lat": 10.4506,
+      "lng": -84.2741
+    }
+  },
+  {
+    "id": "ccss_aguas_zarcas",
+    "nombre": "Área de Salud Aguas Zarcas (CCSS)",
+    "canton": "San Carlos",
+    "distrito": "Aguas Zarcas",
+    "categoria": "Salud",
+    "direccion": "Calle Luna, 300 metros norte del Templo Católico de Aguas Zarcas.",
+    "telefono": "2474-0378",
+    "telefono_secundario": "2474-0012",
+    "correo": "asaguaszarcas@ccss.sa.cr",
+    "requisito_previo": "Documento de identidad o carné provisional (Urgencias 24/7 sin requisito)",
+    "horario": "Lunes a Viernes: 7:00 a. m. a 4:00 p. m. (Emergencias 24/7)",
+    "tramites": "Afiliación y aseguramiento CCSS, atención ambulatoria, laboratorio y urgencias 24 horas.",
+    "coordenadas": {
+      "lat": 10.3752,
+      "lng": -84.3418
+    }
+  },
+  {
+    "id": "ebais_venecia",
+    "nombre": "EBAIS de Venecia (CCSS)",
+    "canton": "San Carlos",
+    "distrito": "Venecia",
+    "categoria": "Salud",
+    "direccion": "Frente a la Plaza de Deportes de Venecia, costado norte.",
+    "telefono": "2472-2114",
+    "correo": "ebais.venecia@ccss.sa.cr",
+    "requisito_previo": "Documento de identidad y recibo de servicio para adscripción",
+    "horario": "Lunes a Jueves: 7:00 a. m. a 4:00 p. m. | Viernes: 7:00 a. m. a 3:00 p. m.",
+    "tramites": "Adscripción médica primaria, medicina general, control prenatal, odontología, farmacia y vacunación.",
+    "coordenadas": {
+      "lat": 10.3703,
+      "lng": -84.2831
+    }
+  },
+  {
+    "id": "adi_venecia",
+    "nombre": "Asociación de Desarrollo Integral de Venecia (ADI)",
+    "canton": "San Carlos",
+    "distrito": "Venecia",
+    "categoria": "Comunitaria",
+    "direccion": "Venecia de San Carlos, salón comunal y oficinas administrativas.",
+    "telefono": "2472-2050",
+    "correo": "asosiaciondesarrollovenecia@gmail.com",
+    "requisito_previo": "Atención abierta a toda la comunidad sin cita previa",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m.",
+    "tramites": "Orientación comunitaria, enlace con instituciones públicas y canalización de apoyo social.",
+    "coordenadas": {
+      "lat": 10.3712,
+      "lng": -84.2825
+    }
+  },
+  {
+    "id": "correos_ciudad_quesada",
+    "nombre": "Ventanilla Electrónica VES — Correos de Costa Rica",
+    "canton": "San Carlos",
+    "distrito": "Ciudad Quesada",
+    "categoria": "Trámites",
+    "direccion": "Costado sur de la Catedral de Ciudad Quesada.",
+    "telefono": "2460-0145",
+    "correo": "ves@correos.go.cr",
+    "requisito_previo": "Cita previa mediante la línea 1311",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m. | Sábados: 8:00 a. m. a 12:00 m.",
+    "tramites": "Citas para toma de fotografía, huellas dactilares, renovación y entrega de documento DIMEX.",
+    "coordenadas": {
+      "lat": 10.3248,
+      "lng": -84.4305
+    }
+  },
+  {
+    "id": "hospital_san_carlos",
+    "nombre": "Hospital San Carlos (CCSS)",
+    "canton": "San Carlos",
+    "distrito": "Ciudad Quesada",
+    "categoria": "Salud",
+    "direccion": "Barrio San Martín, Ciudad Quesada, San Carlos.",
+    "telefono": "2401-1200",
+    "correo": "hospitalsancarlos@ccss.sa.cr",
+    "requisito_previo": "Atención de emergencias y partos garantizada por ley 24/7",
+    "horario": "Servicio de Emergencias: 24 horas continuas, 365 días al año.",
+    "tramites": "Emergencias críticas, maternidad y partos, pediatría, hospitalización y especialidades.",
+    "coordenadas": {
+      "lat": 10.3241,
+      "lng": -84.4312
+    }
+  },
+  {
+    "id": "acnur_upala",
+    "nombre": "ACNUR Oficina de Terreno Upala",
+    "canton": "Upala",
+    "distrito": "Upala Centro",
+    "categoria": "Organización",
+    "direccion": "Costado este del Parque Central de Upala.",
+    "telefono": "800-226-8700",
+    "telefono_secundario": "2470-0190",
+    "correo": "cossan@unhcr.org",
+    "requisito_previo": "Atención gratuita y confidencial para solicitantes de refugio",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 4:00 p. m.",
+    "tramites": "Protección refugio, apoyo legal y social gratuito, convenios de seguro CCSS y asistencia humanitaria.",
+    "coordenadas": {
+      "lat": 10.8987,
+      "lng": -85.0182
+    }
+  },
+  {
+    "id": "dgme_los_chiles",
+    "nombre": "DGME Puesto Fronterizo Los Chiles",
+    "canton": "Los Chiles",
+    "distrito": "Los Chiles Centro",
+    "categoria": "Migración",
+    "direccion": "Los Chiles Centro, Puesto de Control Migratorio Fronterizo Tablillas / Los Chiles.",
+    "telefono": "2471-1255",
+    "correo": "frontera.loschiles@migracion.go.cr",
+    "requisito_previo": "Documento de viaje o identificación",
+    "horario": "Lunes a Domingo: 8:00 a. m. a 4:00 p. m.",
+    "tramites": "Control migratorio, orientación fronteriza e información sobre ingreso regular.",
+    "coordenadas": {
+      "lat": 11.0352,
+      "lng": -84.7160
+    }
+  },
+  {
+    "id": "ebais_los_chiles",
+    "nombre": "EBAIS / Clínica Los Chiles (CCSS)",
+    "canton": "Los Chiles",
+    "distrito": "Los Chiles Centro",
+    "categoria": "Salud",
+    "direccion": "Costado norte del Hospital / Área de Salud de Los Chiles.",
+    "telefono": "2471-1002",
+    "correo": "asloschiles@ccss.sa.cr",
+    "requisito_previo": "Urgencias atendidas sin distinción de estatus migratorio",
+    "horario": "Lunes a Viernes: 7:00 a. m. a 4:00 p. m. (Urgencias 24 horas)",
+    "tramites": "CCSS Servicios de Salud, urgencias médicas, maternidad y salud primaria.",
+    "coordenadas": {
+      "lat": 11.0318,
+      "lng": -84.7172
+    }
+  },
+  {
+    "id": "oim_los_chiles",
+    "nombre": "Centro de Apoyo Humanitario OIM (Naciones Unidas)",
+    "canton": "Los Chiles",
+    "distrito": "Los Chiles Centro",
+    "categoria": "Organización",
+    "direccion": "Calle Central, Los Chiles, 200 m oeste del Templo Católico.",
+    "telefono": "2471-1250",
+    "correo": "oimcostarica@iom.int",
+    "requisito_previo": "Atención humanitaria gratuita",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 4:30 p. m.",
+    "tramites": "Orientación sobre regularización migratoria, información de derechos laborales y asistencia vulnerable.",
+    "coordenadas": {
+      "lat": 11.0331,
+      "lng": -84.7185
+    }
+  }
+]

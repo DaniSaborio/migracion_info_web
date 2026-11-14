@@ -2,8 +2,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 3000;
-const OUT_DIR = path.join(__dirname, 'out');
+const OUT_DIR = path.resolve(__dirname, 'out');
 
 const MIME_TYPES = {
   '.html': 'text/html',
@@ -17,13 +16,45 @@ const MIME_TYPES = {
   '.txt': 'text/plain'
 };
 
+// OWASP A02:2025 — Cabeceras de Seguridad HTTP Estándar (TLS 1.3 / HSTS estricto)
+const SECURITY_HEADERS = {
+  'Content-Security-Policy':
+    "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'",
+  'X-Frame-Options': 'DENY',
+  'X-Content-Type-Options': 'nosniff',
+  'Referrer-Policy': 'strict-origin-when-cross-origin',
+  'Permissions-Policy': 'camera=(), microphone=(), geolocation=(), payment=()',
+  'Cross-Origin-Opener-Policy': 'same-origin',
+  'Strict-Transport-Security': 'max-age=31536000; includeSubDomains; preload'
+};
+
 const server = http.createServer((req, res) => {
-  let urlPath = decodeURI(req.url.split('?')[0]);
+  let urlPath = '/';
+  try {
+    urlPath = decodeURIComponent((req.url || '/').split('?')[0]);
+  } catch {
+    res.writeHead(400, { ...SECURITY_HEADERS, 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('400 Bad Request');
+    return;
+  }
+
+  // OWASP A01:2025 Anti-Path Traversal
+  if (urlPath.includes('\0') || urlPath.includes('..')) {
+    res.writeHead(403, { ...SECURITY_HEADERS, 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('403 Forbidden');
+    return;
+  }
+
   if (urlPath === '/') urlPath = '/index.html';
 
-  let filePath = path.join(OUT_DIR, urlPath);
+  let filePath = path.resolve(OUT_DIR, '.' + urlPath);
 
-  // If path is a directory or lacks extension, try adding /index.html
+  if (!filePath.startsWith(OUT_DIR + path.sep) && filePath !== OUT_DIR) {
+    res.writeHead(403, { ...SECURITY_HEADERS, 'Content-Type': 'text/plain; charset=utf-8' });
+    res.end('403 Forbidden');
+    return;
+  }
+
   if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
     filePath = path.join(filePath, 'index.html');
   } else if (!fs.existsSync(filePath) && fs.existsSync(filePath + '.html')) {
@@ -34,13 +65,12 @@ const server = http.createServer((req, res) => {
 
   fs.readFile(filePath, (err, data) => {
     if (err) {
-      // 404 fallback
       const notFoundPath = path.join(OUT_DIR, '404.html');
       if (fs.existsSync(notFoundPath)) {
-        res.writeHead(404, { 'Content-Type': 'text/html; charset=utf-8' });
+        res.writeHead(404, { ...SECURITY_HEADERS, 'Content-Type': 'text/html; charset=utf-8' });
         res.end(fs.readFileSync(notFoundPath));
       } else {
-        res.writeHead(404, { 'Content-Type': 'text/plain' });
+        res.writeHead(404, { ...SECURITY_HEADERS, 'Content-Type': 'text/plain; charset=utf-8' });
         res.end('404 Not Found');
       }
       return;
@@ -48,7 +78,10 @@ const server = http.createServer((req, res) => {
 
     const ext = path.extname(filePath).toLowerCase();
     const contentType = MIME_TYPES[ext] || 'application/octet-stream';
-    res.writeHead(200, { 'Content-Type': `${contentType}; charset=utf-8` });
+    res.writeHead(200, {
+      ...SECURITY_HEADERS,
+      'Content-Type': `${contentType}; charset=utf-8`
+    });
     res.end(data);
   });
 });
@@ -57,8 +90,9 @@ let currentPort = parseInt(process.env.PORT, 10) || 3000;
 
 function startServer(port) {
   server.listen(port, () => {
-    console.log(`\n  ▲ Servidor Estático de Producción (Cloudflare Pages Preview)`);
+    console.log(`\n  ▲ Portal Migrante — Servidor Estático de Producción (Cloudflare Pages Preview)`);
     console.log(`  - Local:   http://localhost:${port}`);
+    console.log(`  - Seguridad: Cabeceras OWASP Top 10:2025 + HSTS activas`);
     console.log(`  - Sirviendo carpeta: ${OUT_DIR}\n`);
   });
 }

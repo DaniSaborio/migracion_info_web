@@ -1,0 +1,44 @@
+[
+  {
+    "nombre": "9-1-1 Emergencias Nacionales",
+    "telefono": "911",
+    "descripcion": "Policía, Bomberos, Ambulancias Cruz Roja. Atención médica urgente y rescate 100% gratuito y 24/7.",
+    "prioridad": "Alta"
+  },
+  {
+    "nombre": "1322 Información Migratoria (DGME)",
+    "telefono": "1322",
+    "descripcion": "Línea oficial de la Dirección General de Migración y Extranjería para consultas de trámites y orientación.",
+    "prioridad": "Media"
+  },
+  {
+    "nombre": "1311 Línea Oficial de Citas DGME / Correos",
+    "telefono": "1311",
+    "descripcion": "Gestión de citas para solicitud de refugio, renovación y retiro de carné DIMEX en ventanillas VES y BCR.",
+    "prioridad": "Media"
+  },
+  {
+    "nombre": "1147 PANI — Protección de Menores",
+    "telefono": "1147",
+    "descripcion": "Atención prioritaria y denuncias para niños, niñas, adolescentes y madres en situación de riesgo.",
+    "prioridad": "Alta"
+  },
+  {
+    "nombre": "Línea Humanitaria ACNUR (Refugio)",
+    "telefono": "800-226-8700",
+    "descripcion": "Orientación legal gratuita y confidencial para personas solicitantes de refugio en Costa Rica.",
+    "prioridad": "Alta"
+  },
+  {
+    "nombre": "1125 Atención a Mujeres Migrantes — INAMU",
+    "telefono": "1125",
+    "descripcion": "Orientación especializada, asesoría legal y apoyo ante violencia intrafamiliar o de género.",
+    "prioridad": "Alta"
+  },
+  {
+    "nombre": "Fuerza Pública de Venecia de San Carlos",
+    "telefono": "2472-2010",
+    "descripcion": "Delegación policial local de Venecia de San Carlos para asistencia y seguridad comunitaria.",
+    "prioridad": "Media"
+  }
+]
