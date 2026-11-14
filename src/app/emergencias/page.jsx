@@ -15,11 +15,11 @@ export default function EmergenciasPage() {
           </h2>
         </div>
         <p className="text-xs sm:text-sm text-rose-100 leading-relaxed">
-          Acceso garantizado aun en modo desconectado. Todas las llamadas al <strong>9-1-1</strong> son 100% gratuitas desde cualquier teléfono celular, incluso sin saldo ni tarjeta SIM activa.
+          Disponible incluso sin conexión a internet. Todas las llamadas al <strong>9-1-1</strong> son 100% gratuitas desde cualquier teléfono celular, aun sin saldo.
         </p>
       </section>
 
-      {/* Lista de números */}
+      {/* Lista de números (P9: 9-1-1, 1322, 1311, 1147, ACNUR, INAMU, Fuerza Pública) */}
       <div className="grid gap-3.5">
         {emergenciasData.map((num, i) => (
           <div
@@ -59,7 +59,7 @@ export default function EmergenciasPage() {
       <div className="bg-sky-50 dark:bg-sky-950/40 border-l-4 border-sky-600 p-4 rounded-r-xl text-xs sm:text-sm text-sky-950 dark:text-sky-200 flex items-start gap-3">
         <FaCircleInfo className="w-5 h-5 text-sky-600 shrink-0 mt-0.5" />
         <div>
-          <p className="font-bold">Derecho a la Atención de Urgencias:</p>
+          <p className="font-bold">Derecho a la Atención de Urgencias (Ley 8764):</p>
           <p className="mt-0.5">
             Por mandato constitucional y reglamentario de la CCSS, los hospitales y clínicas públicas están legalmente obligados a brindar atención de emergencias a mujeres en labor de parto, niños, niñas y personas en riesgo vital inminente, independientemente de su condición migratoria.
           </p>

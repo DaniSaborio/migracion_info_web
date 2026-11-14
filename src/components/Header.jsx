@@ -29,6 +29,10 @@ export default function Header() {
       document.body.classList.add('high-contrast');
     }
 
+    if (typeof window !== 'undefined' && 'serviceWorker' in navigator) {
+      navigator.serviceWorker.register('/sw.js').catch(() => {});
+    }
+
     return () => {
       window.removeEventListener('online', handleOnline);
       window.removeEventListener('offline', handleOffline);
@@ -51,52 +55,59 @@ export default function Header() {
 
   return (
     <header className="sticky top-0 z-40 bg-gradient-to-r from-brand-700 via-brand-600 to-sky-700 text-white shadow-md">
-      {/* Barra de conectividad y privacidad */}
-      <div className={`px-4 py-1 text-xs font-semibold flex items-center justify-between ${isOnline ? 'bg-sky-900/60 text-sky-100' : 'bg-amber-600 text-white animate-pulse'}`}>
-        <div className="flex items-center gap-1.5">
-          {isOnline ? <FaWifi className="w-3.5 h-3.5" /> : <MdWifiOff className="w-3.5 h-3.5" />}
-          <span>{isOnline ? 'Conectado a Internet' : 'Modo Offline: Funciona sin conexión'}</span>
-        </div>
-        <div className="flex items-center gap-1.5 text-[11px] opacity-90">
-          <FaShieldHalved className="w-3.5 h-3.5 text-emerald-300" />
-          <span>Privacidad Local-First</span>
+      {/* Barra superior compacta de conectividad y accesibilidad */}
+      <div className={`px-4 py-1.5 text-[11px] font-semibold ${isOnline ? 'bg-sky-900/60 text-sky-100' : 'bg-amber-600 text-white'}`}>
+        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-2">
+          <div className="flex items-center gap-2">
+            {isOnline ? <FaWifi className="w-3 h-3 text-emerald-300" /> : <MdWifiOff className="w-3.5 h-3.5" />}
+            <span>{isOnline ? 'Región Huetar Norte · ADI Venecia' : 'Modo sin conexión activo'}</span>
+          </div>
+
+          <div className="flex items-center gap-2">
+            <span className="hidden sm:inline-flex items-center gap-1 text-sky-200 mr-1">
+              <FaShieldHalved className="w-3 h-3 text-emerald-300" />
+              <span>100% Gratuito y Confidencial</span>
+            </span>
+            <button
+              onClick={toggleFont}
+              className={`px-2 py-0.5 rounded border text-[10px] flex items-center gap-1 transition-colors ${
+                fontLarge
+                  ? 'bg-white text-brand-800 border-white font-bold'
+                  : 'bg-brand-800/60 hover:bg-brand-800 text-white border-sky-400/40'
+              }`}
+              title="Ajustar tamaño de letra"
+              aria-label="Ajustar tamaño de letra"
+            >
+              <FaFont className="w-2.5 h-2.5" />
+              <span>{fontLarge ? 'A-' : 'A+'}</span>
+            </button>
+            <button
+              onClick={toggleContrast}
+              className={`px-2 py-0.5 rounded border text-[10px] flex items-center gap-1 transition-colors ${
+                highContrast
+                  ? 'bg-amber-400 text-slate-900 border-amber-300 font-bold'
+                  : 'bg-brand-800/60 hover:bg-brand-800 text-white border-sky-400/40'
+              }`}
+              title="Alternar alto contraste"
+              aria-label="Alternar alto contraste"
+            >
+              <FaEye className="w-2.5 h-2.5" />
+              <span>Contraste</span>
+            </button>
+          </div>
         </div>
       </div>
 
       {/* Contenido principal del Header */}
-      <div className="max-w-4xl mx-auto px-4 py-3 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
-        <div>
-          <Link href="/" className="hover:opacity-95 transition-opacity">
-            <h1 className="text-xl sm:text-2xl font-bold tracking-tight text-white flex items-center gap-2">
-              Portal Información Migrante
-            </h1>
-            <p className="text-xs sm:text-sm text-sky-100/90 font-medium mt-0.5">
-              Región Huetar Norte · Guías oficiales, requisitos y contactos sin intermediarios
-            </p>
-          </Link>
-        </div>
-
-        {/* Botones de accesibilidad */}
-        <div className="flex items-center gap-2 self-start sm:self-auto">
-          <button
-            onClick={toggleFont}
-            className={`px-2.5 py-1 rounded-md text-xs font-medium border flex items-center gap-1.5 transition-colors ${fontLarge ? 'bg-white text-brand-800 border-white' : 'bg-brand-800/50 hover:bg-brand-800 text-white border-sky-400/40'}`}
-            title="Ajustar tamaño de letra"
-            aria-label="Ajustar tamaño de letra"
-          >
-            <FaFont className="w-3.5 h-3.5" />
-            <span>{fontLarge ? 'Texto Normal' : 'Texto Grande'}</span>
-          </button>
-          <button
-            onClick={toggleContrast}
-            className={`px-2.5 py-1 rounded-md text-xs font-medium border flex items-center gap-1.5 transition-colors ${highContrast ? 'bg-amber-400 text-slate-900 border-amber-300 font-bold' : 'bg-brand-800/50 hover:bg-brand-800 text-white border-sky-400/40'}`}
-            title="Alternar alto contraste"
-            aria-label="Alternar alto contraste"
-          >
-            <FaEye className="w-3.5 h-3.5" />
-            <span>{highContrast ? 'Contraste Normal' : 'Alto Contraste'}</span>
-          </button>
-        </div>
+      <div className="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between gap-3">
+        <Link href="/" className="hover:opacity-95 transition-opacity">
+          <h1 className="text-lg sm:text-xl font-extrabold tracking-tight text-white">
+            Portal Información Migrante
+          </h1>
+          <p className="text-xs text-sky-100/90 font-medium">
+            Guías oficiales, requisitos y contactos sin intermediarios
+          </p>
+        </Link>
       </div>
     </header>
   );

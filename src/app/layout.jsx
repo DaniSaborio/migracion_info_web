@@ -31,23 +31,6 @@ export default function RootLayout({ children }) {
           {children}
         </main>
         <BottomNav />
-
-        {/* Script de registro seguro de Service Worker */}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              if ('serviceWorker' in navigator) {
-                window.addEventListener('load', function() {
-                  navigator.serviceWorker.register('/sw.js').then(function(reg) {
-                    console.log('PWA ServiceWorker registrado');
-                  }).catch(function(err) {
-                    console.log('SW error:', err);
-                  });
-                });
-              }
-            `,
-          }}
-        />
       </body>
     </html>
   );

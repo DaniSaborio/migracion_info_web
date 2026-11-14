@@ -109,6 +109,16 @@ export default function GuiaDetailClient({ guia }) {
           <FaLocationDot className="w-4 h-4 text-brand-600 shrink-0" />
           <span><strong>Dónde se realiza:</strong> {guia.lugar}</span>
         </div>
+
+        <div className="pt-2 no-print">
+          <Link
+            href="/directorio/"
+            className="inline-flex items-center justify-center gap-1.5 px-4 py-2 rounded-xl bg-blue-600 hover:bg-blue-700 text-white text-xs font-bold shadow-xs transition-colors"
+          >
+            <FaLocationDot className="w-3.5 h-3.5" />
+            <span>Ver sedes de atención en la Región Huetar Norte</span>
+          </Link>
+        </div>
       </section>
 
       {/* MÓDULO CHECKLIST INTERACTIVO (Local-First) */}
