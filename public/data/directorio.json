@@ -139,6 +139,25 @@
     }
   },
   {
+    "id": "fuerza_publica_ciudad_quesada",
+    "nombre": "Delegación Policial de Ciudad Quesada (Fuerza Pública)",
+    "canton": "San Carlos",
+    "distrito": "Ciudad Quesada",
+    "categoria": "Seguridad",
+    "direccion": "Calle Central Neftalí Quesada, Barrio San Antonio, Ciudad Quesada; 800 m norte del Parque Central de Ciudad Quesada.",
+    "telefono": "2460-0375",
+    "telefono_secundario": "2460-6079",
+    "correo": "delegacion.sancarlos@fuerzapublica.go.cr",
+    "requisito_previo": "Atención abierta 24/7 sin cita previa ante emergencias y seguridad ciudadana",
+    "horario": "Atención continua: 24 horas, los 7 días de la semana.",
+    "tramites": "Asistencia policial ciudadana, respuesta a emergencias, seguridad comunitaria y orientación preventiva.",
+    "mapa_url": "https://maps.app.goo.gl/hLdTGzWAyuMSvc9d6",
+    "coordenadas": {
+      "lat": 10.33135,
+      "lng": -84.430738
+    }
+  },
+  {
     "id": "acnur_upala",
     "nombre": "ACNUR Oficina de Terreno Upala",
     "canton": "Upala",
