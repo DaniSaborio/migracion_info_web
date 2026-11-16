@@ -143,15 +143,15 @@ export default function DirectorioPage() {
                 <FaLocationDot className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                 <span>
                   <strong>Dirección exacta:</strong> {sede.direccion}{' '}
-                  {(sede.mapa_url || sede.coordenadas) && (
+                  {sede.mapa_url && (
                     <a
-                      href={sede.mapa_url || `https://maps.google.com/?q=${sede.coordenadas.lat},${sede.coordenadas.lng}`}
+                      href={sede.mapa_url}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400 hover:underline bg-emerald-50 dark:bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800 ml-1 transition-colors"
                     >
                       <FaMapLocationDot className="w-3 h-3" />
-                      <span>Ver mapa</span>
+                      <span>Ver mapa oficial</span>
                     </a>
                   )}
                 </span>
@@ -195,15 +195,17 @@ export default function DirectorioPage() {
                 <FaPhone className="w-3.5 h-3.5" />
                 <span>Llamar ({sede.telefono})</span>
               </a>
-              <a
-                href={sede.mapa_url || `https://maps.google.com/?q=${sede.coordenadas.lat},${sede.coordenadas.lng}`}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold transition-colors"
-              >
-                <FaMapLocationDot className="w-3.5 h-3.5" />
-                <span>Ver ubicación en el mapa</span>
-              </a>
+              {sede.mapa_url && (
+                <a
+                  href={sede.mapa_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold transition-colors"
+                >
+                  <FaMapLocationDot className="w-3.5 h-3.5" />
+                  <span>Ver ubicación en el mapa</span>
+                </a>
+              )}
             </div>
           </div>
         ))}

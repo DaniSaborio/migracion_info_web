@@ -12,11 +12,7 @@
     "requisito_previo": "Cita previa sacada por web (migracion.go.cr) o llamando al 1311",
     "horario": "Lunes a Viernes: 7:30 a. m. a 3:30 p. m.",
     "tramites": "Recepción de residencias por vínculo, cambio de categoría, permisos de trabajo y refugio.",
-    "coordenadas": {
-      "lat": 10.326455,
-      "lng": -84.430243
-    },
-    "mapa_url": "https://maps.google.com/?q=10.326455,-84.430243"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Direccion+General+de+Migracion+y+Extranjeria+Ciudad+Quesada"
   },
   {
     "id": "bcr_pital",
@@ -30,11 +26,7 @@
     "requisito_previo": "Cita previa al 800-BCR-CITA (800-227-2482) o al 1311",
     "horario": "Lunes a Viernes: 8:30 a. m. a 4:00 p. m.",
     "tramites": "Emisión y renovación de DIMEX, trámite y entrega de carné, depósitos cuenta 242480-0.",
-    "coordenadas": {
-      "lat": 10.450108,
-      "lng": -84.273931
-    },
-    "mapa_url": "https://maps.google.com/?q=10.450108,-84.273931"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Banco+de+Costa+Rica+Pital+San+Carlos"
   },
   {
     "id": "ccss_aguas_zarcas",
@@ -49,11 +41,7 @@
     "requisito_previo": "Documento de identidad o carné provisional (Urgencias 24/7 sin requisito)",
     "horario": "Lunes a Viernes: 7:00 a. m. a 4:00 p. m. (Emergencias 24/7)",
     "tramites": "Afiliación y aseguramiento CCSS, atención ambulatoria, laboratorio y urgencias 24 horas.",
-    "coordenadas": {
-      "lat": 10.37803,
-      "lng": -84.335331
-    },
-    "mapa_url": "https://maps.google.com/?q=10.37803,-84.335331"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Clinica+Aguas+Zarcas+CCSS"
   },
   {
     "id": "ebais_venecia",
@@ -67,11 +55,7 @@
     "requisito_previo": "Documento de identidad y recibo de servicio para adscripción",
     "horario": "Lunes a Jueves: 7:00 a. m. a 4:00 p. m. | Viernes: 7:00 a. m. a 3:00 p. m.",
     "tramites": "Adscripción médica primaria, medicina general, control prenatal, odontología, farmacia y vacunación.",
-    "coordenadas": {
-      "lat": 10.353052,
-      "lng": -84.268619
-    },
-    "mapa_url": "https://maps.google.com/?q=10.353052,-84.268619"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=EBAIS+Venecia+San+Carlos"
   },
   {
     "id": "adi_venecia",
@@ -85,11 +69,7 @@
     "requisito_previo": "Atención abierta a toda la comunidad sin cita previa",
     "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m.",
     "tramites": "Orientación comunitaria, enlace con instituciones públicas y canalización de apoyo social.",
-    "coordenadas": {
-      "lat": 10.35435,
-      "lng": -84.273482
-    },
-    "mapa_url": "https://maps.google.com/?q=10.35435,-84.273482"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Asociacion+de+Desarrollo+Integral+Venecia+San+Carlos"
   },
   {
     "id": "fuerza_publica_venecia",
@@ -103,11 +83,7 @@
     "requisito_previo": "Atención abierta 24/7 sin cita previa ante emergencias y seguridad ciudadana",
     "horario": "Atención continua: 24 horas, los 7 días de la semana.",
     "tramites": "Asistencia policial comunitaria, seguridad ciudadana, atención de emergencias locales y orientación preventiva.",
-    "mapa_url": "https://maps.app.goo.gl/ePTzfC8dXEhbfE9u8",
-    "coordenadas": {
-      "lat": 10.354144,
-      "lng": -84.274951
-    }
+    "mapa_url": "https://maps.app.goo.gl/ePTzfC8dXEhbfE9u8"
   },
   {
     "id": "correos_ciudad_quesada",
@@ -121,11 +97,7 @@
     "requisito_previo": "Cita previa mediante la línea 1311",
     "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m. | Sábados: 8:00 a. m. a 12:00 m.",
     "tramites": "Citas para toma de fotografía, huellas dactilares, renovación y entrega de documento DIMEX.",
-    "coordenadas": {
-      "lat": 10.326482,
-      "lng": -84.430958
-    },
-    "mapa_url": "https://maps.google.com/?q=10.326482,-84.430958"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Correos+de+Costa+Rica+Ciudad+Quesada"
   },
   {
     "id": "hospital_san_carlos",
@@ -139,11 +111,7 @@
     "requisito_previo": "Atención de emergencias y partos garantizada por ley 24/7",
     "horario": "Servicio de Emergencias: 24 horas continuas, 365 días al año.",
     "tramites": "Emergencias críticas, maternidad y partos, pediatría, hospitalización y especialidades.",
-    "coordenadas": {
-      "lat": 10.343581,
-      "lng": -84.432118
-    },
-    "mapa_url": "https://maps.google.com/?q=10.343581,-84.432118"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Hospital+San+Carlos+CCSS"
   },
   {
     "id": "fuerza_publica_ciudad_quesada",
@@ -158,11 +126,7 @@
     "requisito_previo": "Atención abierta 24/7 sin cita previa ante emergencias y seguridad ciudadana",
     "horario": "Atención continua: 24 horas, los 7 días de la semana.",
     "tramites": "Asistencia policial ciudadana, respuesta a emergencias, seguridad comunitaria y orientación preventiva.",
-    "mapa_url": "https://maps.app.goo.gl/hLdTGzWAyuMSvc9d6",
-    "coordenadas": {
-      "lat": 10.33135,
-      "lng": -84.430738
-    }
+    "mapa_url": "https://maps.app.goo.gl/hLdTGzWAyuMSvc9d6"
   },
   {
     "id": "acnur_upala",
@@ -177,11 +141,7 @@
     "requisito_previo": "Atención gratuita y confidencial para solicitantes de refugio",
     "horario": "Lunes a Viernes: 8:00 a. m. a 4:00 p. m.",
     "tramites": "Protección refugio, apoyo legal y social gratuito, convenios de seguro CCSS y asistencia humanitaria.",
-    "coordenadas": {
-      "lat": 10.899301,
-      "lng": -85.017513
-    },
-    "mapa_url": "https://maps.google.com/?q=10.899301,-85.017513"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=ACNUR+Oficina+de+Terreno+Upala"
   },
   {
     "id": "dgme_los_chiles",
@@ -195,11 +155,7 @@
     "requisito_previo": "Documento de viaje o identificación",
     "horario": "Lunes a Domingo: 8:00 a. m. a 4:00 p. m.",
     "tramites": "Control migratorio, orientación fronteriza e información sobre ingreso regular.",
-    "coordenadas": {
-      "lat": 11.07368,
-      "lng": -84.696133
-    },
-    "mapa_url": "https://maps.google.com/?q=11.07368,-84.696133"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Puesto+Fronterizo+Las+Tablillas+DGME"
   },
   {
     "id": "ebais_los_chiles",
@@ -213,11 +169,7 @@
     "requisito_previo": "Urgencias atendidas sin distinción de estatus migratorio",
     "horario": "Lunes a Viernes: 7:00 a. m. a 4:00 p. m. (Urgencias 24 horas)",
     "tramites": "CCSS Servicios de Salud, urgencias médicas, maternidad y salud primaria.",
-    "coordenadas": {
-      "lat": 11.031028,
-      "lng": -84.711335
-    },
-    "mapa_url": "https://maps.google.com/?q=11.031028,-84.711335"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Hospital+Los+Chiles+CCSS"
   },
   {
     "id": "oim_los_chiles",
@@ -231,10 +183,6 @@
     "requisito_previo": "Atención humanitaria gratuita",
     "horario": "Lunes a Viernes: 8:00 a. m. a 4:30 p. m.",
     "tramites": "Orientación sobre regularización migratoria, información de derechos laborales y asistencia vulnerable.",
-    "coordenadas": {
-      "lat": 11.033636,
-      "lng": -84.714138
-    },
-    "mapa_url": "https://maps.google.com/?q=11.033636,-84.714138"
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Terminal+Municipal+de+Buses+Los+Chiles"
   }
 ]

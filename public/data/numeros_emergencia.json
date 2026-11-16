@@ -40,21 +40,13 @@
     "telefono": "2472-2010",
     "descripcion": "Delegación Policial de Venecia de San Carlos (100 m oeste y 50 m sur del Parque Central de Venecia, diagonal al Almacén Agroveterinario Dos Pinos).",
     "prioridad": "Media",
-    "mapa_url": "https://maps.app.goo.gl/ePTzfC8dXEhbfE9u8",
-    "coordenadas": {
-      "lat": 10.354144,
-      "lng": -84.274951
-    }
+    "mapa_url": "https://maps.app.goo.gl/ePTzfC8dXEhbfE9u8"
   },
   {
     "nombre": "Fuerza Pública de Ciudad Quesada",
     "telefono": "2460-0375",
     "descripcion": "Delegación Cantonal de San Carlos en Ciudad Quesada (Calle Central Neftalí Quesada, 800 m norte del Parque Central).",
     "prioridad": "Media",
-    "mapa_url": "https://maps.app.goo.gl/hLdTGzWAyuMSvc9d6",
-    "coordenadas": {
-      "lat": 10.33135,
-      "lng": -84.430738
-    }
+    "mapa_url": "https://maps.app.goo.gl/hLdTGzWAyuMSvc9d6"
   }
 ]
