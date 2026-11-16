@@ -26,6 +26,7 @@ export default function DirectorioPage() {
     'Pital',
     'Aguas Zarcas',
     'Ciudad Quesada',
+    'Río Cuarto',
     'Upala',
     'Los Chiles'
   ];

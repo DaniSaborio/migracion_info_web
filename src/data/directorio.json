@@ -170,5 +170,61 @@
     "horario": "Lunes a Viernes: 8:00 a. m. a 4:30 p. m.",
     "tramites": "Orientación sobre regularización migratoria, información de derechos laborales y asistencia vulnerable.",
     "mapa_url": "https://www.google.com/maps/search/?api=1&query=Terminal+Municipal+de+Buses+Los+Chiles"
+  },
+  {
+    "id": "fuerza_publica_aguas_zarcas",
+    "nombre": "Subdelegación Policial de Aguas Zarcas (Fuerza Pública)",
+    "canton": "San Carlos",
+    "distrito": "Aguas Zarcas",
+    "categoria": "Seguridad",
+    "direccion": "Casco central de Aguas Zarcas, Calle Central; diagonal a la Universidad San José y 150 m este del Parque Central de Aguas Zarcas.",
+    "telefono": "2474-4046",
+    "correo": "delegacion.aguaszarcas@fuerzapublica.go.cr",
+    "requisito_previo": "Atención abierta 24/7 sin cita previa ante emergencias y seguridad ciudadana",
+    "horario": "Atención continua: 24 horas, los 7 días de la semana.",
+    "tramites": "Asistencia policial comunitaria, vigilancia preventiva, atención de emergencias locales y recepción de reportes ciudadanos.",
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Subdelegacion+Policial+Aguas+Zarcas+Fuerza+Publica"
+  },
+  {
+    "id": "correos_aguas_zarcas",
+    "nombre": "Sucursal de Correos de Costa Rica — Aguas Zarcas",
+    "canton": "San Carlos",
+    "distrito": "Aguas Zarcas",
+    "categoria": "Trámites",
+    "direccion": "Centro de Aguas Zarcas, Calle Central; diagonal a la agencia del ICE y contiguo al sector comercial de la Plaza de Deportes.",
+    "telefono": "2257-8888",
+    "correo": "srvcliente@correos.go.cr",
+    "requisito_previo": "Atención presencial en ventanilla para correspondencia, paquetería y certificaciones",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m.",
+    "tramites": "Recepción y retiro de paquetes postales, envío de correspondencia y entrega de documentos oficiales.",
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Correos+de+Costa+Rica+Aguas+Zarcas"
+  },
+  {
+    "id": "correos_venecia",
+    "nombre": "Sucursal de Correos de Costa Rica — Venecia",
+    "canton": "San Carlos",
+    "distrito": "Venecia",
+    "categoria": "Trámites",
+    "direccion": "Casco central de Venecia de San Carlos; frente a las oficinas del ICE (100 m este del Parque Central de Venecia).",
+    "telefono": "2257-8888",
+    "correo": "srvcliente@correos.go.cr",
+    "requisito_previo": "Atención presencial en ventanilla para correspondencia, paquetería y certificaciones",
+    "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m.",
+    "tramites": "Recepción y entrega de paquetería postal, correspondencia nacional e internacional y certificaciones institucionales.",
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Correos+de+Costa+Rica+Venecia+San+Carlos"
+  },
+  {
+    "id": "fuerza_publica_rio_cuarto",
+    "nombre": "Delegación Policial de Río Cuarto (Fuerza Pública)",
+    "canton": "Río Cuarto",
+    "distrito": "Río Cuarto Centro",
+    "categoria": "Seguridad",
+    "direccion": "Casco central de Río Cuarto; 100 m oeste del Templo Católico y contiguo al Parque Central / Parador Fotográfico.",
+    "telefono": "2465-5210",
+    "correo": "delegacion.riocuarto@fuerzapublica.go.cr",
+    "requisito_previo": "Atención abierta 24/7 sin cita previa ante emergencias y seguridad ciudadana",
+    "horario": "Atención continua: 24 horas, los 7 días de la semana.",
+    "tramites": "Asistencia policial comunitaria, seguridad ciudadana, atención e intervención en emergencias y orientación preventiva.",
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Delegacion+Policial+de+Rio+Cuarto+Fuerza+Publica"
   }
 ]

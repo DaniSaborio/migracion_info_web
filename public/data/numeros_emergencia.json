@@ -48,5 +48,19 @@
     "descripcion": "Delegación Cantonal de San Carlos en Ciudad Quesada (Calle Central Neftalí Quesada, 800 m norte del Parque Central).",
     "prioridad": "Media",
     "mapa_url": "https://maps.app.goo.gl/hLdTGzWAyuMSvc9d6"
+  },
+  {
+    "nombre": "Fuerza Pública de Aguas Zarcas",
+    "telefono": "2474-4046",
+    "descripcion": "Subdelegación Policial de Aguas Zarcas (Calle Central, diagonal a la Universidad San José y 150 m este del Parque Central).",
+    "prioridad": "Media",
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Subdelegacion+Policial+Aguas+Zarcas+Fuerza+Publica"
+  },
+  {
+    "nombre": "Fuerza Pública de Río Cuarto",
+    "telefono": "2465-5210",
+    "descripcion": "Delegación Cantonal de Policía de Río Cuarto (100 m oeste del Templo Católico, contiguo al Parque Central y Parador Fotográfico).",
+    "prioridad": "Media",
+    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Delegacion+Policial+de+Rio+Cuarto+Fuerza+Publica"
   }
 ]
