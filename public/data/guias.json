@@ -8,7 +8,7 @@
       "crc": 0,
       "detalle": "Trámite 100% gratuito. La cita, la recepción de documentos y el carné provisional de solicitante NO tienen ningún costo."
     },
-    "lugar": "Unidad de Refugio de Migración (La Uruca, San José). No se puede solicitar en Ciudad Quesada.",
+    "lugar": "Unidad de Refugio de la DGME (La Uruca, San José, contiguo a Aviación Civil). No se recibe solicitud inicial en Ciudad Quesada.",
     "cuenta_bancaria": "No aplica ningún pago.",
     "advertencia_fraude": "Las citas de refugio son estrictamente gratuitas y personales. No pague a intermediarios ni tramitadores que cobren por apartar citas o vender formularios.",
     "requisitos": [
@@ -50,7 +50,7 @@
       "crc": 71500,
       "detalle": "US$138 arancel total oficial (incluye US$90 por solicitud de categoría especial + US$5 de canon social y emisión documental en cuenta BCR 242480-0)."
     },
-    "lugar": "Sede Regional de Migración en Ciudad Quesada o vía ventanilla digital oficial de la DGME.",
+    "lugar": "Delegación Regional de Migración en Ciudad Quesada (Barrio El Carmen, Diagonal 51; 400 m norte y 25 m este de la Catedral) o vía ventanilla digital oficial de la DGME.",
     "cuenta_bancaria": "Cuenta 242480-0 del Banco de Costa Rica (BCR) a nombre de la persona solicitante.",
     "advertencia_fraude": "¡No pague a tramitadores! Las citas oficiales son gratuitas. Verifique siempre que el depósito se realice directamente en la cuenta oficial 242480-0 del BCR.",
     "requisitos": [
@@ -92,7 +92,7 @@
       "crc": 130000,
       "detalle": "US$200 por solicitud de residencia + US$50 por especies fiscales, registro consular y timbres oficiales en cuenta 242480-0 del BCR."
     },
-    "lugar": "Delegación Regional de Migración en Ciudad Quesada o Plataforma Digital de la DGME.",
+    "lugar": "Delegación Regional de Migración en Ciudad Quesada (Barrio El Carmen, Diagonal 51; 400 m norte y 25 m este de la Catedral) o Plataforma Digital de la DGME.",
     "cuenta_bancaria": "Cuenta 242480-0 del BCR a nombre de la persona que tramita la residencia.",
     "advertencia_fraude": "Tener hijos costarricenses otorga el derecho legal de solicitar residencia permanente por vínculo; las citas de recepción son gratuitas.",
     "requisitos": [
@@ -134,7 +134,7 @@
       "crc": 67000,
       "detalle": "Tarifas Oficiales Vigentes: Residencia Permanente: US$128 + US$15 comisión | Categoría Especial: US$138 arancel oficial | Carné de Refugio: US$103 trámite | Multa por mes vencido: US$3.00 USD."
     },
-    "lugar": "BCR Punto País Pital, BCR Ciudad Quesada o Ventanilla Electrónica VES de Correos de Costa Rica.",
+    "lugar": "BCR Punto País Pital (Calle 0, 100 m norte y 50 m este de la Iglesia Católica de Pital) o Ventanilla VES de Correos de Costa Rica en Ciudad Quesada (Av. 5, 25 m este de Coopelesca).",
     "cuenta_bancaria": "Cuenta 242480-0 del Banco de Costa Rica (BCR) o pago directo en ventanilla autorizada al momento de la cita.",
     "advertencia_fraude": "¿Cuándo tramitar? Inicie el proceso hasta 3 meses antes de que expire su carné para no pagar multas acumulativas (US$3.00 por mes vencido) ni quedar en irregularidad.",
     "requisitos": [
@@ -176,7 +176,7 @@
       "crc": 0,
       "detalle": "Trámite de adscripción 100% gratuito. Modalidades de Cobertura: 1. Asalariado (Planilla patronal obligatoria) | 2. Trabajador Independiente (Agro / Comercio) | 3. Seguro Voluntario individual | 4. Seguro por el Estado (vía ficha IMAS)."
     },
-    "lugar": "EBAIS de Venecia, Área de Salud de Aguas Zarcas, Hospital San Carlos y Sucursal CCSS Ciudad Quesada.",
+    "lugar": "EBAIS de Venecia (Ruta Nacional 140, costado este de la Plaza de Deportes), Área de Salud de Aguas Zarcas (Calle Luna, 600 m este y 400 m norte del Templo) y Hospital San Carlos (Barrio San Martín, Ciudad Quesada).",
     "cuenta_bancaria": "Pago mensual en cajas de la CCSS, plataformas bancarias o deducción de planilla patronal.",
     "advertencia_fraude": "Atención Garantizada por Ley: Incluso sin seguro formal, los centros de salud atienden obligatoriamente: Urgencias y partos, menores de edad, personas gestantes y pacientes con VIH. Los EBAIS y hospitales NO denuncian ni reportan a Migración.",
     "requisitos": [

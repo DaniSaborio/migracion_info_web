@@ -142,7 +142,10 @@ export default function DirectorioPage() {
               <p className="flex items-start gap-2">
                 <FaLocationDot className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                 <span>
-                  <strong>Dirección:</strong> {sede.direccion}
+                  <strong>Dirección exacta:</strong> {sede.direccion}{' '}
+                  <span className="inline-block text-[11px] font-mono text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded ml-1">
+                    GPS: {sede.coordenadas.lat}, {sede.coordenadas.lng}
+                  </span>
                 </span>
               </p>
               <p className="flex items-start gap-2">

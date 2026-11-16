@@ -5,7 +5,7 @@
     "canton": "San Carlos",
     "distrito": "Ciudad Quesada",
     "categoria": "Migración",
-    "direccion": "400m Norte y 25m Este de la Catedral, frente a Plaza de Deportes Ciudad Quesada.",
+    "direccion": "Barrio El Carmen, Diagonal 51, Ciudad Quesada; 400 m norte y 25 m este de la Catedral San Carlos Borromeo (150 m norte de la Escuela Juan Chaves Rojas).",
     "telefono": "2460-3044",
     "telefono_secundario": "2460-6425",
     "correo": "dgme.san-carlos@migracion.go.cr",
@@ -13,8 +13,8 @@
     "horario": "Lunes a Viernes: 7:30 a. m. a 3:30 p. m.",
     "tramites": "Recepción de residencias por vínculo, cambio de categoría, permisos de trabajo y refugio.",
     "coordenadas": {
-      "lat": 10.3251,
-      "lng": -84.4287
+      "lat": 10.326455,
+      "lng": -84.430243
     }
   },
   {
@@ -23,15 +23,15 @@
     "canton": "San Carlos",
     "distrito": "Pital",
     "categoria": "Trámites",
-    "direccion": "Centro de Pital, costado norte del Parque de Pital de San Carlos.",
+    "direccion": "Centro de Pital, Calle 0; 100 m norte y 50 m este del costado norte de la Iglesia Católica y del Parque Central de Pital de San Carlos.",
     "telefono": "800-227-2482",
     "correo": "puntopais@bancobcr.com",
     "requisito_previo": "Cita previa al 800-BCR-CITA (800-227-2482) o al 1311",
     "horario": "Lunes a Viernes: 8:30 a. m. a 4:00 p. m.",
     "tramites": "Emisión y renovación de DIMEX, trámite y entrega de carné, depósitos cuenta 242480-0.",
     "coordenadas": {
-      "lat": 10.4506,
-      "lng": -84.2741
+      "lat": 10.450108,
+      "lng": -84.273931
     }
   },
   {
@@ -40,7 +40,7 @@
     "canton": "San Carlos",
     "distrito": "Aguas Zarcas",
     "categoria": "Salud",
-    "direccion": "Calle Luna, 300 metros norte del Templo Católico de Aguas Zarcas.",
+    "direccion": "Calle Luna, Aguas Zarcas; 600 m este y 400 m norte del Templo Católico de Aguas Zarcas (acceso por Ruta Nacional 140).",
     "telefono": "2474-0378",
     "telefono_secundario": "2474-0012",
     "correo": "asaguaszarcas@ccss.sa.cr",
@@ -48,8 +48,8 @@
     "horario": "Lunes a Viernes: 7:00 a. m. a 4:00 p. m. (Emergencias 24/7)",
     "tramites": "Afiliación y aseguramiento CCSS, atención ambulatoria, laboratorio y urgencias 24 horas.",
     "coordenadas": {
-      "lat": 10.3752,
-      "lng": -84.3418
+      "lat": 10.37803,
+      "lng": -84.335331
     }
   },
   {
@@ -58,15 +58,15 @@
     "canton": "San Carlos",
     "distrito": "Venecia",
     "categoria": "Salud",
-    "direccion": "Frente a la Plaza de Deportes de Venecia, costado norte.",
+    "direccion": "Sobre Ruta Nacional 140 (carretera principal Aguas Zarcas - Venecia), costado este de la Plaza de Deportes de Venecia, Venecia de San Carlos.",
     "telefono": "2472-2114",
     "correo": "ebais.venecia@ccss.sa.cr",
     "requisito_previo": "Documento de identidad y recibo de servicio para adscripción",
     "horario": "Lunes a Jueves: 7:00 a. m. a 4:00 p. m. | Viernes: 7:00 a. m. a 3:00 p. m.",
     "tramites": "Adscripción médica primaria, medicina general, control prenatal, odontología, farmacia y vacunación.",
     "coordenadas": {
-      "lat": 10.3703,
-      "lng": -84.2831
+      "lat": 10.353052,
+      "lng": -84.268619
     }
   },
   {
@@ -75,15 +75,15 @@
     "canton": "San Carlos",
     "distrito": "Venecia",
     "categoria": "Comunitaria",
-    "direccion": "Venecia de San Carlos, salón comunal y oficinas administrativas.",
+    "direccion": "Casco central de Venecia de San Carlos, Avenida 0 / Calle 1; costado sur del Templo Católico Nuestra Señora de la Candelaria y contiguo al Parque Central de Venecia (Salón Comunal y oficinas administrativas).",
     "telefono": "2472-2050",
     "correo": "asosiaciondesarrollovenecia@gmail.com",
     "requisito_previo": "Atención abierta a toda la comunidad sin cita previa",
     "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m.",
     "tramites": "Orientación comunitaria, enlace con instituciones públicas y canalización de apoyo social.",
     "coordenadas": {
-      "lat": 10.3712,
-      "lng": -84.2825
+      "lat": 10.35435,
+      "lng": -84.273482
     }
   },
   {
@@ -92,15 +92,15 @@
     "canton": "San Carlos",
     "distrito": "Ciudad Quesada",
     "categoria": "Trámites",
-    "direccion": "Costado sur de la Catedral de Ciudad Quesada.",
+    "direccion": "Avenida 5 Ricardo Quesada Cabezas, Barrio El Carmen / Maracaná, Ciudad Quesada; 25 m este de las oficinas centrales de Coopelesca (300 m norte y 100 m oeste de la Catedral).",
     "telefono": "2460-0145",
     "correo": "ves@correos.go.cr",
     "requisito_previo": "Cita previa mediante la línea 1311",
     "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m. | Sábados: 8:00 a. m. a 12:00 m.",
     "tramites": "Citas para toma de fotografía, huellas dactilares, renovación y entrega de documento DIMEX.",
     "coordenadas": {
-      "lat": 10.3248,
-      "lng": -84.4305
+      "lat": 10.326482,
+      "lng": -84.430958
     }
   },
   {
@@ -109,15 +109,15 @@
     "canton": "San Carlos",
     "distrito": "Ciudad Quesada",
     "categoria": "Salud",
-    "direccion": "Barrio San Martín, Ciudad Quesada, San Carlos.",
+    "direccion": "Barrio San Martín (San Roque), Calle Central Neftalí Quesada (Ruta Nacional 141), Ciudad Quesada; 2 km al norte de la Catedral de Ciudad Quesada.",
     "telefono": "2401-1200",
     "correo": "hospitalsancarlos@ccss.sa.cr",
     "requisito_previo": "Atención de emergencias y partos garantizada por ley 24/7",
     "horario": "Servicio de Emergencias: 24 horas continuas, 365 días al año.",
     "tramites": "Emergencias críticas, maternidad y partos, pediatría, hospitalización y especialidades.",
     "coordenadas": {
-      "lat": 10.3241,
-      "lng": -84.4312
+      "lat": 10.343581,
+      "lng": -84.432118
     }
   },
   {
@@ -126,7 +126,7 @@
     "canton": "Upala",
     "distrito": "Upala Centro",
     "categoria": "Organización",
-    "direccion": "Costado este del Parque Central de Upala.",
+    "direccion": "Centro de Upala, costado este del supermercado Palí, frente a la antigua parada de autobuses y contiguo a Farmacia El Pueblo (100 m norte y 100 m oeste del Parque Central de Upala).",
     "telefono": "800-226-8700",
     "telefono_secundario": "2470-0190",
     "correo": "cossan@unhcr.org",
@@ -134,8 +134,8 @@
     "horario": "Lunes a Viernes: 8:00 a. m. a 4:00 p. m.",
     "tramites": "Protección refugio, apoyo legal y social gratuito, convenios de seguro CCSS y asistencia humanitaria.",
     "coordenadas": {
-      "lat": 10.8987,
-      "lng": -85.0182
+      "lat": 10.899301,
+      "lng": -85.017513
     }
   },
   {
@@ -144,15 +144,15 @@
     "canton": "Los Chiles",
     "distrito": "Los Chiles Centro",
     "categoria": "Migración",
-    "direccion": "Los Chiles Centro, Puesto de Control Migratorio Fronterizo Tablillas / Los Chiles.",
+    "direccion": "Puesto de Control Migratorio Fronterizo Las Tablillas (final de la Ruta Nacional 35, límite fronterizo con Nicaragua) y Oficina Regional Los Chiles Centro (100 m al sur del Muelle Municipal de Los Chiles).",
     "telefono": "2471-1255",
     "correo": "frontera.loschiles@migracion.go.cr",
     "requisito_previo": "Documento de viaje o identificación",
     "horario": "Lunes a Domingo: 8:00 a. m. a 4:00 p. m.",
     "tramites": "Control migratorio, orientación fronteriza e información sobre ingreso regular.",
     "coordenadas": {
-      "lat": 11.0352,
-      "lng": -84.7160
+      "lat": 11.07368,
+      "lng": -84.696133
     }
   },
   {
@@ -161,15 +161,15 @@
     "canton": "Los Chiles",
     "distrito": "Los Chiles Centro",
     "categoria": "Salud",
-    "direccion": "Costado norte del Hospital / Área de Salud de Los Chiles.",
+    "direccion": "Corredor Norte (Barrio Los Pineda), Los Chiles Centro; costado norte del Hospital Los Chiles / Área de Salud de Los Chiles (sobre Ruta Nacional 35).",
     "telefono": "2471-1002",
     "correo": "asloschiles@ccss.sa.cr",
     "requisito_previo": "Urgencias atendidas sin distinción de estatus migratorio",
     "horario": "Lunes a Viernes: 7:00 a. m. a 4:00 p. m. (Urgencias 24 horas)",
     "tramites": "CCSS Servicios de Salud, urgencias médicas, maternidad y salud primaria.",
     "coordenadas": {
-      "lat": 11.0318,
-      "lng": -84.7172
+      "lat": 11.031028,
+      "lng": -84.711335
     }
   },
   {
@@ -178,15 +178,15 @@
     "canton": "Los Chiles",
     "distrito": "Los Chiles Centro",
     "categoria": "Organización",
-    "direccion": "Calle Central, Los Chiles, 200 m oeste del Templo Católico.",
+    "direccion": "Centro Municipal para Migrantes (CMM - OIM), dentro de la Terminal Municipal de Buses de Los Chiles, costado oeste de los Tribunales de Justicia de Los Chiles.",
     "telefono": "2471-1250",
     "correo": "oimcostarica@iom.int",
     "requisito_previo": "Atención humanitaria gratuita",
     "horario": "Lunes a Viernes: 8:00 a. m. a 4:30 p. m.",
     "tramites": "Orientación sobre regularización migratoria, información de derechos laborales y asistencia vulnerable.",
     "coordenadas": {
-      "lat": 11.0331,
-      "lng": -84.7185
+      "lat": 11.033636,
+      "lng": -84.714138
     }
   }
 ]
