@@ -57,15 +57,15 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-gradient-to-r from-brand-700 via-brand-600 to-sky-700 text-white shadow-md">
       {/* Barra superior compacta de conectividad y accesibilidad */}
       <div className={`px-4 py-1.5 text-[11px] font-semibold ${isOnline ? 'bg-sky-900/60 text-sky-100' : 'bg-amber-600 text-white'}`}>
-        <div className="max-w-4xl mx-auto flex flex-wrap items-center justify-between gap-2">
-          <div className="flex items-center gap-2">
-            {isOnline ? <FaWifi className="w-3 h-3 text-emerald-300" /> : <MdWifiOff className="w-3.5 h-3.5" />}
-            <span>{isOnline ? 'Región Huetar Norte · ADI Venecia' : 'Modo sin conexión activo'}</span>
+        <div className="max-w-4xl mx-auto flex items-center justify-between gap-2 min-w-0">
+          <div className="flex items-center gap-1.5 min-w-0 truncate">
+            {isOnline ? <FaWifi className="w-3 h-3 text-emerald-300 shrink-0" /> : <MdWifiOff className="w-3.5 h-3.5 shrink-0" />}
+            <span className="truncate">Región Huetar Norte <span className="hidden sm:inline">· ADI Venecia</span></span>
           </div>
 
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-1.5 shrink-0">
             <span className="hidden sm:inline-flex items-center gap-1 text-sky-200 mr-1">
-              <FaShieldHalved className="w-3 h-3 text-emerald-300" />
+              <FaShieldHalved className="w-3 h-3 text-emerald-300 shrink-0" />
               <span>100% Gratuito y Confidencial</span>
             </span>
             <button
@@ -78,7 +78,7 @@ export default function Header() {
               title="Ajustar tamaño de letra"
               aria-label="Ajustar tamaño de letra"
             >
-              <FaFont className="w-2.5 h-2.5" />
+              <FaFont className="w-2.5 h-2.5 shrink-0" />
               <span>{fontLarge ? 'A-' : 'A+'}</span>
             </button>
             <button
@@ -91,7 +91,7 @@ export default function Header() {
               title="Alternar alto contraste"
               aria-label="Alternar alto contraste"
             >
-              <FaEye className="w-2.5 h-2.5" />
+              <FaEye className="w-2.5 h-2.5 shrink-0" />
               <span>Contraste</span>
             </button>
           </div>
