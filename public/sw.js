@@ -1,5 +1,5 @@
 // Service Worker Network-First para contenido y datos, Cache-First para estáticos
-const CACHE_NAME = 'portal-migrante-next-v2.1.0';
+const CACHE_NAME = 'portal-migrante-next-v2.2.0';
 
 const PRECACHE_ASSETS = [
   '/',

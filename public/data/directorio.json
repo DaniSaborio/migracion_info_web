@@ -58,20 +58,6 @@
     "mapa_url": "https://www.google.com/maps/search/?api=1&query=EBAIS+Venecia+San+Carlos"
   },
   {
-    "id": "adi_venecia",
-    "nombre": "Asociación de Desarrollo Integral de Venecia (ADI)",
-    "canton": "San Carlos",
-    "distrito": "Venecia",
-    "categoria": "Comunitaria",
-    "direccion": "Casco central de Venecia de San Carlos, Avenida 0 / Calle 1; costado sur del Templo Católico Nuestra Señora de la Candelaria y contiguo al Parque Central de Venecia (Salón Comunal y oficinas administrativas).",
-    "telefono": "2472-2050",
-    "correo": "asosiaciondesarrollovenecia@gmail.com",
-    "requisito_previo": "Atención abierta a toda la comunidad sin cita previa",
-    "horario": "Lunes a Viernes: 8:00 a. m. a 5:00 p. m.",
-    "tramites": "Orientación comunitaria, enlace con instituciones públicas y canalización de apoyo social.",
-    "mapa_url": "https://www.google.com/maps/search/?api=1&query=Asociacion+de+Desarrollo+Integral+Venecia+San+Carlos"
-  },
-  {
     "id": "fuerza_publica_venecia",
     "nombre": "Delegación Policial de Venecia (Fuerza Pública)",
     "canton": "San Carlos",

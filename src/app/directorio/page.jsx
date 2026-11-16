@@ -30,7 +30,7 @@ export default function DirectorioPage() {
     'Los Chiles'
   ];
 
-  const categorias = ['Todos', 'Migración', 'Trámites', 'Salud', 'Organización', 'Comunitaria', 'Seguridad'];
+  const categorias = ['Todos', 'Migración', 'Trámites', 'Salud', 'Organización', 'Seguridad'];
 
   const filtrados = directorioData.filter((sede) => {
     const matchCanton =
