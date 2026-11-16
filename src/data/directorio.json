@@ -15,7 +15,8 @@
     "coordenadas": {
       "lat": 10.326455,
       "lng": -84.430243
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.326455,-84.430243"
   },
   {
     "id": "bcr_pital",
@@ -32,7 +33,8 @@
     "coordenadas": {
       "lat": 10.450108,
       "lng": -84.273931
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.450108,-84.273931"
   },
   {
     "id": "ccss_aguas_zarcas",
@@ -50,7 +52,8 @@
     "coordenadas": {
       "lat": 10.37803,
       "lng": -84.335331
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.37803,-84.335331"
   },
   {
     "id": "ebais_venecia",
@@ -67,7 +70,8 @@
     "coordenadas": {
       "lat": 10.353052,
       "lng": -84.268619
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.353052,-84.268619"
   },
   {
     "id": "adi_venecia",
@@ -84,7 +88,8 @@
     "coordenadas": {
       "lat": 10.35435,
       "lng": -84.273482
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.35435,-84.273482"
   },
   {
     "id": "fuerza_publica_venecia",
@@ -119,7 +124,8 @@
     "coordenadas": {
       "lat": 10.326482,
       "lng": -84.430958
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.326482,-84.430958"
   },
   {
     "id": "hospital_san_carlos",
@@ -136,7 +142,8 @@
     "coordenadas": {
       "lat": 10.343581,
       "lng": -84.432118
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.343581,-84.432118"
   },
   {
     "id": "fuerza_publica_ciudad_quesada",
@@ -173,7 +180,8 @@
     "coordenadas": {
       "lat": 10.899301,
       "lng": -85.017513
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=10.899301,-85.017513"
   },
   {
     "id": "dgme_los_chiles",
@@ -190,7 +198,8 @@
     "coordenadas": {
       "lat": 11.07368,
       "lng": -84.696133
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=11.07368,-84.696133"
   },
   {
     "id": "ebais_los_chiles",
@@ -207,7 +216,8 @@
     "coordenadas": {
       "lat": 11.031028,
       "lng": -84.711335
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=11.031028,-84.711335"
   },
   {
     "id": "oim_los_chiles",
@@ -224,6 +234,7 @@
     "coordenadas": {
       "lat": 11.033636,
       "lng": -84.714138
-    }
+    },
+    "mapa_url": "https://maps.google.com/?q=11.033636,-84.714138"
   }
 ]

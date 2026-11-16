@@ -143,9 +143,17 @@ export default function DirectorioPage() {
                 <FaLocationDot className="w-4 h-4 text-brand-600 shrink-0 mt-0.5" />
                 <span>
                   <strong>Dirección exacta:</strong> {sede.direccion}{' '}
-                  <span className="inline-block text-[11px] font-mono text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-1.5 py-0.5 rounded ml-1">
-                    GPS: {sede.coordenadas.lat}, {sede.coordenadas.lng}
-                  </span>
+                  {(sede.mapa_url || sede.coordenadas) && (
+                    <a
+                      href={sede.mapa_url || `https://maps.google.com/?q=${sede.coordenadas.lat},${sede.coordenadas.lng}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1 text-[11px] font-semibold text-emerald-700 dark:text-emerald-400 hover:underline bg-emerald-50 dark:bg-emerald-950/50 px-2 py-0.5 rounded border border-emerald-200 dark:border-emerald-800 ml-1 transition-colors"
+                    >
+                      <FaMapLocationDot className="w-3 h-3" />
+                      <span>Ver mapa</span>
+                    </a>
+                  )}
                 </span>
               </p>
               <p className="flex items-start gap-2">
