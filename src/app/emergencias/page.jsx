@@ -1,6 +1,6 @@
 'use client';
 
-import { FaTriangleExclamation, FaPhoneVolume, FaCircleInfo } from 'react-icons/fa6';
+import { FaTriangleExclamation, FaPhoneVolume, FaCircleInfo, FaMapLocationDot } from 'react-icons/fa6';
 import emergenciasData from '@/data/emergencias.json';
 
 export default function EmergenciasPage() {
@@ -42,7 +42,18 @@ export default function EmergenciasPage() {
               </p>
             </div>
 
-            <div className="shrink-0">
+            <div className="shrink-0 flex flex-col sm:flex-row gap-2">
+              {num.mapa_url && (
+                <a
+                  href={num.mapa_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white font-bold text-xs sm:text-sm shadow-sm transition-colors"
+                >
+                  <FaMapLocationDot className="w-4 h-4" />
+                  <span>Ver ubicación</span>
+                </a>
+              )}
               <a
                 href={`tel:${num.telefono.replace(/-/g, '')}`}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl bg-red-600 hover:bg-red-700 text-white font-bold text-sm shadow-sm transition-colors"

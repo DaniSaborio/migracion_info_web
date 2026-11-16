@@ -87,6 +87,24 @@
     }
   },
   {
+    "id": "fuerza_publica_venecia",
+    "nombre": "Delegación Policial de Venecia (Fuerza Pública)",
+    "canton": "San Carlos",
+    "distrito": "Venecia",
+    "categoria": "Seguridad",
+    "direccion": "Casco central de Venecia de San Carlos; 100 m oeste y 50 m sur del Parque Central de Venecia (diagonal al Almacén Agroveterinario Dos Pinos).",
+    "telefono": "2472-2010",
+    "correo": "delegacion.venecia@msp.go.cr",
+    "requisito_previo": "Atención abierta 24/7 sin cita previa ante emergencias y seguridad ciudadana",
+    "horario": "Atención continua: 24 horas, los 7 días de la semana.",
+    "tramites": "Asistencia policial comunitaria, seguridad ciudadana, atención de emergencias locales y orientación preventiva.",
+    "mapa_url": "https://maps.app.goo.gl/ePTzfC8dXEhbfE9u8",
+    "coordenadas": {
+      "lat": 10.354144,
+      "lng": -84.274951
+    }
+  },
+  {
     "id": "correos_ciudad_quesada",
     "nombre": "Ventanilla Electrónica VES — Correos de Costa Rica",
     "canton": "San Carlos",

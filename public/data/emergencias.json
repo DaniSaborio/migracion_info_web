@@ -39,6 +39,11 @@
     "nombre": "Fuerza Pública de Venecia de San Carlos",
     "telefono": "2472-2010",
     "descripcion": "Delegación Policial de Venecia de San Carlos (100 m oeste y 50 m sur del Parque Central de Venecia, diagonal al Almacén Agroveterinario Dos Pinos).",
-    "prioridad": "Media"
+    "prioridad": "Media",
+    "mapa_url": "https://maps.app.goo.gl/ePTzfC8dXEhbfE9u8",
+    "coordenadas": {
+      "lat": 10.354144,
+      "lng": -84.274951
+    }
   }
 ]

@@ -30,7 +30,7 @@ export default function DirectorioPage() {
     'Los Chiles'
   ];
 
-  const categorias = ['Todos', 'Migración', 'Trámites', 'Salud', 'Organización', 'Comunitaria'];
+  const categorias = ['Todos', 'Migración', 'Trámites', 'Salud', 'Organización', 'Comunitaria', 'Seguridad'];
 
   const filtrados = directorioData.filter((sede) => {
     const matchCanton =
@@ -188,7 +188,7 @@ export default function DirectorioPage() {
                 <span>Llamar ({sede.telefono})</span>
               </a>
               <a
-                href={`https://maps.google.com/?q=${sede.coordenadas.lat},${sede.coordenadas.lng}`}
+                href={sede.mapa_url || `https://maps.google.com/?q=${sede.coordenadas.lat},${sede.coordenadas.lng}`}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-1.5 px-3 py-2.5 rounded-xl bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold transition-colors"
